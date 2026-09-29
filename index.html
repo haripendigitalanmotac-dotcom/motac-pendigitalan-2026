@@ -876,79 +876,60 @@
           <p id="errRegName" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan nama penuh.</p>
         </div>
 
-        <!-- Jawatan (text) + Gred (dropdown) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Jawatan *</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
-                <i data-lucide="briefcase" class="w-4 h-4"></i>
-              </span>
-              <input type="text" id="regPosition" placeholder="CONTOH: PEGAWAI TEKNOLOGI MAKLUMAT"
-                style="text-transform:uppercase"
-                class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
-            </div>
-            <p id="errRegPosition" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan jawatan.</p>
+        <!-- Jawatan (text, baris sendiri) -->
+        <div>
+          <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Jawatan *</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+              <i data-lucide="briefcase" class="w-4 h-4"></i>
+            </span>
+            <input type="text" id="regPosition" placeholder="CONTOH: PEGAWAI TEKNOLOGI MAKLUMAT"
+              style="text-transform:uppercase"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
           </div>
-          <div>
-            <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Gred *</label>
-            <div class="relative">
-              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
-                <i data-lucide="layers" class="w-4 h-4"></i>
-              </span>
-              <select id="regGred"
-                class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition appearance-none">
-                <option value="">-- Pilih Gred --</option>
-                <optgroup label="Pengurusan & Profesional">
-                  <option>VU7</option><option>VU6</option><option>VU5</option>
-                  <option>JUSA C</option><option>JUSA B</option><option>JUSA A</option>
-                  <option>Gred Khas C</option><option>Gred Khas B</option><option>Gred Khas A</option>
-                </optgroup>
-                <optgroup label="Kumpulan F (ICT)">
-                  <option>F41</option><option>F44</option><option>F48</option>
-                  <option>F52</option><option>F54</option><option>F56</option>
-                </optgroup>
-                <optgroup label="Kumpulan N (Am)">
-                  <option>N19</option><option>N22</option><option>N26</option>
-                  <option>N29</option><option>N32</option><option>N36</option>
-                  <option>N41</option><option>N44</option><option>N48</option><option>N52</option>
-                </optgroup>
-                <optgroup label="Kumpulan W (Perkhidmatan Pelajaran)">
-                  <option>W17</option><option>W19</option><option>W22</option><option>W26</option>
-                  <option>W29</option><option>W32</option><option>W36</option>
-                  <option>W41</option><option>W44</option><option>W48</option><option>W52</option>
-                </optgroup>
-                <optgroup label="Kumpulan E (Ekonomi)">
-                  <option>E41</option><option>E44</option><option>E48</option><option>E52</option>
-                </optgroup>
-                <optgroup label="Kumpulan S (Sains)">
-                  <option>S29</option><option>S32</option><option>S36</option>
-                  <option>S41</option><option>S44</option><option>S48</option><option>S52</option>
-                </optgroup>
-                <optgroup label="Kumpulan A (Pentadbiran)">
-                  <option>A17</option><option>A19</option><option>A22</option><option>A26</option>
-                  <option>A29</option><option>A32</option><option>A36</option>
-                  <option>A41</option><option>A44</option><option>A48</option><option>A52</option>
-                </optgroup>
-                <optgroup label="Kumpulan DG (Perkhidmatan)">
-                  <option>DG29</option><option>DG32</option><option>DG34</option><option>DG38</option>
-                  <option>DG41</option><option>DG44</option><option>DG48</option><option>DG52</option>
-                </optgroup>
-                <optgroup label="Kumpulan LS / B / C">
-                  <option>LS17</option><option>LS19</option><option>LS22</option>
-                  <option>B17</option><option>B19</option><option>B22</option>
-                  <option>C17</option><option>C19</option><option>C22</option>
-                </optgroup>
-                <optgroup label="Lain-lain">
-                  <option>Kontrak</option><option>Pinjaman</option><option>Lain-lain</option>
-                </optgroup>
-              </select>
-              <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-500">
-                <i data-lucide="chevron-down" class="w-4 h-4"></i>
-              </span>
-            </div>
-            <p id="errRegGred" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila pilih gred.</p>
+          <p id="errRegPosition" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan jawatan.</p>
+        </div>
+
+        <!-- Gred (dropdown, baris sendiri) -->
+        <div>
+          <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Gred *</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+              <i data-lucide="layers" class="w-4 h-4"></i>
+            </span>
+            <select id="regGred"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition appearance-none">
+              <option value="">-- Pilih Gred --</option>
+              <optgroup label="Kumpulan Pelaksana (SSM Gred 19–40)">
+                <option value="1">Gred 1 (SSM 19/20)</option>
+                <option value="2">Gred 2 (SSM 21/22 – 24)</option>
+                <option value="3">Gred 3 (SSM 25/26)</option>
+                <option value="4">Gred 4 (SSM 27/28)</option>
+                <option value="5">Gred 5 (SSM 29/30)</option>
+                <option value="6">Gred 6 (SSM 31/32 – 35/36)</option>
+                <option value="7">Gred 7 (SSM 36** – 37/38)</option>
+                <option value="8">Gred 8 (SSM 39/40)</option>
+              </optgroup>
+              <optgroup label="Kumpulan Pengurusan &amp; Profesional (SSM Gred 41–56)">
+                <option value="9">Gred 9 (SSM 41/42)</option>
+                <option value="10">Gred 10 (SSM 43/44)</option>
+                <option value="11">Gred 11 (SSM 45/46)</option>
+                <option value="12">Gred 12 (SSM 47/48)</option>
+                <option value="13">Gred 13 (SSM 51/52)</option>
+                <option value="14">Gred 14 (SSM 53/54)</option>
+                <option value="15">Gred 15 (SSM 55/56)</option>
+              </optgroup>
+              <optgroup label="Lain-lain">
+                <option value="Kontrak">Kontrak</option>
+                <option value="Pinjaman">Pinjaman</option>
+                <option value="Lain-lain">Lain-lain</option>
+              </optgroup>
+            </select>
+            <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-500">
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </span>
           </div>
+          <p id="errRegGred" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila pilih gred.</p>
         </div>
 
         <!-- Jabatan / Agensi (dropdown) -->
@@ -983,18 +964,72 @@
           <p id="errRegDept" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila pilih jabatan / agensi.</p>
         </div>
 
-        <!-- Bahagian / Unit (text, uppercase) -->
+        <!-- Bahagian (dropdown) -->
         <div>
           <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Bahagian / Unit *</label>
           <div class="relative">
             <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
               <i data-lucide="git-branch" class="w-4 h-4"></i>
             </span>
-            <input type="text" id="regDept" placeholder="CONTOH: BAHAGIAN PENGURUSAN MAKLUMAT (BPM)"
-              style="text-transform:uppercase"
-              class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
+            <select id="regDept"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition appearance-none">
+              <option value="">-- Pilih Bahagian / Unit --</option>
+              <optgroup label="Pejabat Menteri &amp; Timbalan">
+                <option value="YBM">Pejabat Menteri</option>
+                <option value="YBTM">Pejabat Timbalan Menteri</option>
+              </optgroup>
+              <optgroup label="Pejabat Ketua Setiausaha">
+                <option value="KSU">Pejabat Ketua Setiausaha</option>
+                <option value="TKSUPL">Pejabat Timbalan Ketua Setiausaha Pelancongan</option>
+                <option value="TKSUK">Pejabat Timbalan Ketua Setiausaha Kebudayaan</option>
+                <option value="TKSUP">Pejabat Timbalan Ketua Setiausaha Pengurusan</option>
+              </optgroup>
+              <optgroup label="Bahagian">
+                <option value="DPL">Bahagian Dasar Pelancongan dan Hubungan Antarabangsa</option>
+                <option value="DK">Bahagian Dasar Kebudayaan</option>
+                <option value="HAK">Bahagian Hubungan Antarabangsa Kebudayaan</option>
+                <option value="PI">Bahagian Pembangunan Industri</option>
+                <option value="BPA">Bahagian Pengurusan Acara</option>
+                <option value="BK">Bahagian Kewangan</option>
+                <option value="BT">Bahagian Pentadbiran</option>
+                <option value="BA">Bahagian Akaun</option>
+                <option value="BPLN">Bahagian Pelesenan dan Penguatkuasaan Pelancongan</option>
+                <option value="BPM">Bahagian Pengurusan Maklumat</option>
+                <option value="BPSM">Bahagian Pengurusan Sumber Manusia</option>
+                <option value="PP">Bahagian Pembangunan Prasarana</option>
+              </optgroup>
+              <optgroup label="Unit &amp; Pusat">
+                <option value="MATIC">Pusat Pelancongan Malaysia MaTiC</option>
+                <option value="UKK">Unit Komunikasi Korporat</option>
+                <option value="UP">Unit Perundangan</option>
+                <option value="UAD">Unit Audit Dalam</option>
+                <option value="UI">Unit Integriti</option>
+                <option value="KPI">Unit Petunjuk Prestasi Utama KPI</option>
+                <option value="MM2H">Pusat Malaysia Rumah Keduaku MM2H</option>
+              </optgroup>
+              <optgroup label="Pejabat Negeri">
+                <option value="Perlis">MOTAC Perlis</option>
+                <option value="Kedah">MOTAC Kedah</option>
+                <option value="Penang">MOTAC Pulau Pinang</option>
+                <option value="Perak">MOTAC Perak</option>
+                <option value="Selangor">MOTAC Selangor</option>
+                <option value="Melaka">MOTAC Melaka</option>
+                <option value="NegeriSembilan">MOTAC Negeri Sembilan</option>
+                <option value="Johor">MOTAC Johor</option>
+                <option value="Kelantan">MOTAC Kelantan</option>
+                <option value="Terengganu">MOTAC Terengganu</option>
+                <option value="Pahang">MOTAC Pahang</option>
+                <option value="Sarawak">MOTAC Sarawak</option>
+                <option value="Sabah">MOTAC Sabah</option>
+                <option value="KL">MOTAC KL</option>
+                <option value="Labuan">MOTAC Labuan</option>
+              </optgroup>
+            </select>
+            <span class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-500">
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </span>
           </div>
-          <p id="errRegUnit" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan bahagian / unit.</p>
+          <p id="errRegUnit" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila pilih bahagian / unit.</p>
         </div>
 
         <!-- Emel Rasmi & No Telefon -->
@@ -1283,13 +1318,13 @@
     }
 
     // Hilangkan error bila user mula taip / pilih
-    ['regName','regPosition','regGred','regOrg','regEmail','regPhone'].forEach(id => {
+    ['regName','regPosition','regGred','regOrg','regDept','regEmail','regPhone'].forEach(id => {
       const el = document.getElementById(id);
       if (!el) return;
       const errMap = {
         regName:'errRegName', regPosition:'errRegPosition',
         regGred:'errRegGred', regOrg:'errRegDept',
-        regEmail:'errRegEmail', regPhone:'errRegPhone'
+        regDept:'errRegUnit', regEmail:'errRegEmail', regPhone:'errRegPhone'
       };
       const clearErr = () => {
         el.classList.remove('border-red-500');
@@ -1311,6 +1346,9 @@
       const orgEl   = document.getElementById('regOrg');
       const org     = orgEl.value;
       const orgText = orgEl.options[orgEl.selectedIndex]?.text || '';
+      const deptEl  = document.getElementById('regDept');
+      const dept    = deptEl.value;
+      const deptText = deptEl.options[deptEl.selectedIndex]?.text || '';
       const emel    = document.getElementById('regEmail').value.trim();
       const telefon = document.getElementById('regPhone').value.trim();
 
@@ -1319,10 +1357,11 @@
       setFieldError('regPosition', 'errRegPosition', !jawatan);
       setFieldError('regGred',     'errRegGred',     !gred);
       setFieldError('regOrg',      'errRegDept',     !org);
+      setFieldError('regDept',     'errRegUnit',     !dept);
       setFieldError('regEmail',    'errRegEmail',    !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel));
       setFieldError('regPhone',    'errRegPhone',    !telefon || !/^[\d\-\+\s]{9,15}$/.test(telefon));
 
-      if (!nama || !jawatan || !gred || !org || !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)
+      if (!nama || !jawatan || !gred || !org || !dept || !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)
           || !telefon || !/^[\d\-\+\s]{9,15}$/.test(telefon)) return;
 
       const submitBtn = e.target.querySelector('button[type="submit"]');
@@ -1341,6 +1380,7 @@
       const payload = {
         nama, jawatan, gred,
         jabatan: orgText,
+        bahagian: deptText,
         emel, telefon,
         tarikhDaftar: new Date().toLocaleString('ms-MY', { timeZone: 'Asia/Kuala_Lumpur' })
       };
