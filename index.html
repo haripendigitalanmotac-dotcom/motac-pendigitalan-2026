@@ -364,15 +364,6 @@
               <rect x="280" y="300" width="300" height="38" rx="4" fill="#020617" stroke="#94a3b8" stroke-width="1.5" />
               <text x="430" y="325" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">TEMPAT DUDUK TETAMU / PESERTA</text>
 
-              <!-- PHOTO BOOTH / PHOTO WALL -->
-              <line x1="430" y1="440" x2="430" y2="415" stroke="#94a3b8" stroke-width="2" />
-              <g id="photoBoothZone" class="cursor-pointer" onclick="selectZone('photowall')">
-                <rect x="290" y="445" width="280" height="46" rx="4" fill="#020617" stroke="#00d2ff" stroke-width="2" />
-                <line x1="290" y1="445" x2="570" y2="445" stroke="#ffffff" stroke-width="5" />
-                <text x="430" y="468" fill="#e2e8f0" font-size="14" font-weight="800" text-anchor="middle">PHOTO BOOTH / PHOTO WALL</text>
-                <text x="430" y="482" fill="#38bdf8" font-size="10" text-anchor="middle">Menghadap pentas utama</text>
-              </g>
-
               <!-- SCREEN INTERACTIVE PANEL (SIP) - 5 Points -->
               <g id="sipGroup" fill="#94a3b8" stroke="#475569" stroke-width="1">
                 <!-- SIP 1 (Kiri Atas) -->
@@ -1095,10 +1086,6 @@
           <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">Hari Pendigitalan MOTAC Tahun 2026</h4>
           <p class="text-slate-400 mt-1">Anjuran: Bahagian Pengurusan Maklumat (BPM), Kementerian Pelancongan, Seni dan Budaya</p>
         </div>
-        <div class="text-center md:text-right">
-          <p class="text-slate-300 font-semibold">Dewan Sanggar Pujangga, Aras 1, Menara 1, MOTAC Putrajaya</p>
-          <p class="text-slate-500 mt-0.5">Pertanyaan: bpm@motac.gov.my | Sambungan BPM MOTAC</p>
-        </div>
       </div>
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
         <p>&copy; 2026 Kementerian Pelancongan, Seni dan Budaya Malaysia (MOTAC). Hak Cipta Terpelihara.</p>
@@ -1271,26 +1258,6 @@
       const iconContainer = document.getElementById('detailIcon');
       iconContainer.setAttribute('data-lucide', data.icon);
       lucide.createIcons();
-    }
-
-    // Function to handle photo booth / non-booth zone selection
-    function selectZone(zone) {
-      if (zone === 'photowall') {
-        for (let i = 1; i <= 10; i++) {
-          const elem = document.getElementById(`boothSvg${i}`);
-          if (elem) elem.classList.remove('booth-active');
-        }
-        document.getElementById('selectedBadge').innerText = "PHOTO BOOTH";
-        document.getElementById('detailTitle').innerText = "Photo Booth / Photo Wall";
-        document.getElementById('detailSubtitle').innerText = "Menghadap Pentas Utama (Ruang Gambar Kenangan)";
-        document.getElementById('detailDescription').innerText = "Ruang khas bergambar dilengkapi pencahayaan moden dan latar belakang digital bertemakan 'Memacu Transformasi Digital MOTAC' untuk tetamu dan warga kementerian.";
-        document.getElementById('detailActivity').innerText = "Fotografi Kenangan & Muat Naik Media Sosial";
-        document.getElementById('detailLocation').innerText = "Belakang Barisan Kerusi Peserta / Menghadap Pentas";
-        
-        const iconContainer = document.getElementById('detailIcon');
-        iconContainer.setAttribute('data-lucide', 'camera');
-        lucide.createIcons();
-      }
     }
 
     // ============================================================
