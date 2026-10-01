@@ -1058,24 +1058,99 @@
     </div>
   </section>
 
-  <!-- Modal Pengesahan Pendaftaran -->
+  <!-- Modal Pengesahan Pendaftaran — Template Emel Digital -->
   <div id="regModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden">
-    <div class="bg-[#07132c] border border-cyan-400/50 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl">
-      <div class="w-14 h-14 bg-emerald-950/80 border border-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 text-emerald-400">
-        <i data-lucide="check" class="w-7 h-7 stroke-[3]"></i>
+    <!-- Outer border frame — cyan digital glow -->
+    <div class="relative max-w-lg w-full rounded-2xl overflow-hidden"
+         style="border: 3px solid transparent;
+                background-clip: padding-box;
+                box-shadow: 0 0 0 3px #00d2ff, 0 0 40px rgba(0,210,255,0.35), 0 25px 60px rgba(0,0,0,0.8);">
+
+      <!-- Background emel.jpeg — nampak jelas -->
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('emel.jpeg');"></div>
+      <!-- Overlay nipis sahaja supaya background nampak -->
+      <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(3,8,22,0.45) 0%, rgba(7,19,44,0.55) 100%);"></div>
+
+      <!-- Kandungan modal -->
+      <div class="relative z-10">
+
+        <!-- Header digital — gradient cyan ke biru, tiada border hijau -->
+        <div class="px-6 py-5 text-center" style="background: linear-gradient(135deg, #0066ff 0%, #00d2ff 100%);">
+          <!-- Ikon check -->
+          <div class="flex justify-center mb-2">
+            <div style="width:44px; height:44px; border-radius:50%; background:rgba(255,255,255,0.2); border:2px solid rgba(255,255,255,0.6); display:flex; align-items:center; justify-content:center;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+          </div>
+          <h3 class="text-white font-display font-extrabold text-lg tracking-widest uppercase" style="text-shadow: 0 0 20px rgba(0,210,255,0.8);">Pendaftaran Berjaya</h3>
+          <p class="text-cyan-100 text-xs mt-1 font-medium tracking-wider">HARI PENDIGITALAN MOTAC TAHUN 2026</p>
+        </div>
+
+        <!-- Badan emel -->
+        <div class="px-7 py-6 text-sm leading-relaxed space-y-4">
+
+          <!-- Ucapan pembuka -->
+          <p class="font-semibold text-white" style="text-shadow:0 1px 4px rgba(0,0,0,0.8);">YBhg. Datuk/ Dato'/ YBrs. Prof/Dr./Tuan/Puan,</p>
+
+          <!-- Nama pendaftar -->
+          <p id="modalUserName" class="font-extrabold uppercase" style="color:#00d2ff; text-shadow:0 0 12px rgba(0,210,255,0.7); font-size:15px;"></p>
+
+          <!-- Isi surat -->
+          <p class="text-slate-100" style="text-shadow:0 1px 3px rgba(0,0,0,0.7);">
+            Dimaklumkan bahawa nama anda telah berjaya didaftarkan untuk menghadiri
+            <strong class="text-white">HARI PENDIGITALAN MOTAC TAHUN 2026</strong> seperti butiran berikut:
+          </p>
+
+          <!-- Kotak butiran program — kaca/glassmorphism -->
+          <div style="background: rgba(7,19,44,0.65); border: 1px solid rgba(0,210,255,0.3); border-radius: 10px; padding: 16px 18px; backdrop-filter: blur(8px);">
+            <table style="width:100%; font-size:13px; border-collapse:collapse;">
+              <tr>
+                <td style="padding:6px 0; font-weight:700; color:#e2e8f0; width:130px;">Tarikh Program</td>
+                <td style="padding:6px 4px; color:#94a3b8; width:14px;">:</td>
+                <td style="padding:6px 0; color:#f1f5f9;">28 Oktober 2026 (Rabu)</td>
+              </tr>
+              <tr>
+                <td style="padding:6px 0; font-weight:700; color:#e2e8f0;">Masa</td>
+                <td style="padding:6px 4px; color:#94a3b8;">:</td>
+                <td style="padding:6px 0; color:#f1f5f9;">8.00 Pagi – 6.00 Petang</td>
+              </tr>
+              <tr>
+                <td style="padding:6px 0; font-weight:700; color:#e2e8f0;">Tempat</td>
+                <td style="padding:6px 4px; color:#94a3b8;">:</td>
+                <td style="padding:6px 0; color:#f1f5f9;">Dewan Sanggar Pujangga, Aras 1,<br>Menara 1, MOTAC Putrajaya</td>
+              </tr>
+              <tr>
+                <td style="padding:6px 0; font-weight:700; color:#e2e8f0;">Anjuran</td>
+                <td style="padding:6px 4px; color:#94a3b8;">:</td>
+                <td style="padding:6px 0; color:#f1f5f9;">Bahagian Pengurusan Maklumat (BPM), MOTAC</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Nota penting -->
+          <p class="text-slate-200 text-xs leading-relaxed" style="text-shadow:0 1px 3px rgba(0,0,0,0.7);">
+            Sila ambil maklum bahawa kehadiran ke program ini adalah <strong class="text-white">diwajibkan</strong>.
+            Sebarang perubahan atau pembatalan penyertaan hendaklah dimaklumkan kepada urus setia
+            selewat-lewatnya <strong class="text-white">5 hari bekerja dari emel ini dihantar.</strong>
+          </p>
+
+          <p class="text-slate-400 text-xs">Sekian, terima kasih.</p>
+        </div>
+
+        <!-- Footer -->
+        <div style="background: rgba(3,8,22,0.7); border-top: 1px solid rgba(0,210,255,0.2); padding: 14px 28px;">
+          <p class="text-center text-xs text-slate-400 mb-3">
+            <strong class="text-slate-300">Bahagian Pengurusan Maklumat (BPM)</strong><br>
+            Kementerian Pelancongan, Seni dan Budaya Malaysia (MOTAC)
+          </p>
+          <button onclick="closeRegModal()"
+            class="w-full py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider text-white transition-all hover:scale-[1.02]"
+            style="background: linear-gradient(135deg, #0066ff, #00d2ff); box-shadow: 0 0 18px rgba(0,210,255,0.35);">
+            Tutup
+          </button>
+        </div>
+
       </div>
-      <h3 class="font-display text-xl font-bold text-white mb-2">Pendaftaran Berjaya!</h3>
-      <p class="text-xs sm:text-sm text-slate-300 mb-5 leading-relaxed">
-        Terima kasih, <strong id="modalUserName" class="text-cyan-400"></strong>. Pengesahan kehadiran anda ke <strong>Hari Pendigitalan MOTAC Tahun 2026</strong> telah direkodkan.
-      </p>
-      <div class="bg-[#030816] p-3 rounded-xl text-xs text-left space-y-1.5 border border-slate-800 mb-5">
-        <div class="flex justify-between"><span class="text-slate-400">Tarikh:</span><span class="text-white font-semibold">28 Oktober 2026 (Rabu)</span></div>
-        <div class="flex justify-between"><span class="text-slate-400">Waktu:</span><span class="text-white font-semibold">8.00 Pagi – 6.00 Petang</span></div>
-        <div class="flex justify-between"><span class="text-slate-400">Lokasi:</span><span class="text-cyan-300 font-semibold">Dewan Sanggar Pujangga, MOTAC</span></div>
-      </div>
-      <button onclick="closeRegModal()" class="w-full py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl text-white font-bold text-xs uppercase tracking-wider">
-        Selesai
-      </button>
     </div>
   </div>
 
@@ -1265,8 +1340,7 @@
     // Ganti nilai di bawah dengan URL Google Apps Script anda.
     // Rujuk PANDUAN-SETUP.md untuk cara dapatkan URL ini.
     // ============================================================
-    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzNaX7P29HDQFnTICx0c7XcT66MVZ0_7TuFPPraiTdqLJtHMMiD60IfoupP9OkkiwZt/exec';
-
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxvHBSyHdd6_8gYI0NP4aKHy33NVTueGnIEREFigxTBSmWa_QPvx7SBsyGaC5YMt0FsKA/exec';
     // ── Validasi helper ──────────────────────────────────────────
     function setFieldError(inputId, errorId, hasError) {
       const input = document.getElementById(inputId);
@@ -1377,6 +1451,7 @@
       // Tunjuk modal
       document.getElementById('modalUserName').innerText = nama;
       document.getElementById('regModal').classList.remove('hidden');
+      document.getElementById('regModal').scrollTop = 0;
       document.getElementById('regForm').reset();
     }
 
