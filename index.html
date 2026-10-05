@@ -1116,17 +1116,14 @@
         <i data-lucide="x" class="w-5 h-5"></i>
       </button>
       <!-- Pengepala Modal: Gambar & Nama Penceramah -->
-      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 pb-5 border-b border-slate-700/70">
-        <div class="relative">
-          <img id="speakerImage" src="" alt="Foto Penceramah" class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border-2 border-cyan-400/80 shadow-lg shadow-cyan-500/30">
-          <span id="speakerLotBadge" class="absolute -bottom-2 -right-2 text-[10px] font-display font-extrabold px-2 py-0.5 rounded-md bg-amber-500 text-slate-950 border border-amber-300 shadow">LOT 01</span>
+      <div class="pb-5 border-b border-slate-700/70">
+        <div class="flex items-center gap-3 mb-2">
+          <span id="speakerSlotBadge" class="inline-block text-[11px] font-bold text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800 uppercase tracking-wider">Slot 1</span>
+          <span id="speakerLotBadge" class="text-[10px] font-display font-extrabold px-2 py-0.5 rounded-md bg-amber-500 text-slate-950 border border-amber-300 shadow">LOT 01</span>
         </div>
-        <div class="text-center sm:text-left flex-1">
-          <span id="speakerSlotBadge" class="inline-block text-[11px] font-bold text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800 uppercase tracking-wider mb-1.5">Slot 1</span>
-          <h3 id="speakerName" class="text-lg sm:text-xl font-extrabold text-white leading-tight">Nama Penceramah</h3>
-          <p id="speakerRole" class="text-xs sm:text-sm text-cyan-300 font-medium mt-1">Jawatan & Organisasi</p>
-          <p id="speakerTopic" class="text-xs text-amber-300 font-semibold mt-1">Topik:</p>
-        </div>
+        <h3 id="speakerName" class="text-lg sm:text-xl font-extrabold text-white leading-tight">Nama Penceramah</h3>
+        <p id="speakerRole" class="text-xs sm:text-sm text-cyan-300 font-medium mt-1">Jawatan & Organisasi</p>
+        <p id="speakerTopic" class="text-xs text-amber-300 font-semibold mt-1">Topik:</p>
       </div>
       <!-- Kandungan Biodata -->
       <div class="py-4 space-y-4">
@@ -1527,8 +1524,6 @@
       const data = boothDatabase[id];
       if (!data || !data.speaker) return;
       const spk = data.speaker;
-      document.getElementById('speakerImage').src = spk.photo;
-      document.getElementById('speakerImage').alt = spk.name;
       document.getElementById('speakerLotBadge').innerText = `LOT ${String(id).padStart(2, '0')}`;
       document.getElementById('speakerSlotBadge').innerText = data.subtitle.split('•')[0].trim() || `Slot ${id}`;
       document.getElementById('speakerName').innerText = spk.name;
