@@ -519,6 +519,12 @@
                 <span id="detailLocation" class="text-amber-400 font-medium">Lot Pempamer 1 (Sebelah Stor & SIP Kanan)</span>
               </div>
             </div>
+            <!-- Butang Biodata Penceramah (tersembunyi untuk Lot 9 & 10) -->
+            <button id="panelSpeakerBtn" onclick="openSpeakerModal(1)"
+              class="w-full py-2.5 px-4 rounded-xl bg-cyan-950/70 border border-cyan-500/50 hover:bg-cyan-500 hover:text-white text-cyan-300 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition duration-200 shadow-md">
+              <i data-lucide="user-check" class="w-4 h-4"></i>
+              <span>Lihat Biodata Penceramah</span>
+            </button>
           </div>
 
           <p class="text-[11px] text-slate-400 mt-5 text-center italic">
@@ -540,7 +546,7 @@
       </h2>
       <div class="w-16 h-1 bg-cyan-400 mx-auto mt-3 rounded-full"></div>
       <p class="text-slate-400 mt-4 text-sm sm:text-base">
-        Menghubungkan warga MOTAC dengan rakan strategik industri berteknologi tinggi, institusi kerajaan dan badan bukan kerajaan (NGO).
+        Menghubungkan warga MOTAC dengan rakan strategik industri berteknologi tinggi, institusi kerajaan dan badan bukan kerajaan (NGO). Klik butang <strong class="text-cyan-400">Biodata Penceramah</strong> bagi Lot 1 hingga 8 untuk mengenali penceramah pakar.
       </p>
     </div>
 
@@ -559,7 +565,12 @@
             Identiti Digital Nasional sektor awam, pengesahan tanpa kata laluan dan keselamatan transaksi rakyat.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 1 • 9.00 Pagi</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 1 • 9.00 Pagi</span>
+          <button onclick="openSpeakerModal(1)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 2 -->
@@ -574,7 +585,12 @@
             Ekosistem AI Copilot, produktiviti pejabat pintar, automasi pentadbiran dan kolaborasi moden.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 2 • 11.10 Pagi</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 2 • 11.10 Pagi</span>
+          <button onclick="openSpeakerModal(2)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 3 -->
@@ -589,7 +605,12 @@
             Infrastruktur pengkomputeran awan berprestasi tinggi, analitik data pelancongan dan keselamatan AI awan.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 3 • 11.40 Pagi</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 3 • 11.40 Pagi</span>
+          <button onclick="openSpeakerModal(3)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 4 -->
@@ -604,7 +625,12 @@
             Perkakasan hibrid pejabat masa depan, sekuriti peranti endpoint dan teknologi percetakan mampan.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 4 • 12.10 Tgh Hari</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 4 • 12.10 Tgh Hari</span>
+          <button onclick="openSpeakerModal(4)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 5 -->
@@ -619,7 +645,12 @@
             Penyelesaian pengimejan resolusi tinggi, arkib digital seni warisan serta sistem imbasan pintar.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 5 • 2.30 Petang</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 5 • 2.30 Petang</span>
+          <button onclick="openSpeakerModal(5)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 6 -->
@@ -634,7 +665,12 @@
             Integrasi sistem ICT komprehensif, penyelesaian rangkaian korporat dan infrastruktur rangkaian pintar.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 6 • 3.00 Petang</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 6 • 3.00 Petang</span>
+          <button onclick="openSpeakerModal(6)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 7 -->
@@ -649,7 +685,12 @@
             Aplikasi inovatif dan perisian interaktif memperkasa pengurusan pengalaman digital pengunjung pelancongan.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 7 • 3.30 Petang</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 7 • 3.30 Petang</span>
+          <button onclick="openSpeakerModal(7)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 8 -->
@@ -664,7 +705,12 @@
             Inovasi robotik automasi, pemerkasaan STEM dan pendedahan teknologi robotik untuk kebudayaan moden.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Slot 8 • 4.00 Petang</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot 8 • 4.00 Petang</span>
+          <button onclick="openSpeakerModal(8)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 9 -->
@@ -1058,6 +1104,60 @@
     </div>
   </section>
 
+  <!-- ========================================================
+       MODAL TIMBUL (POPUP) BIODATA PENCERAMAH
+  ======================================================== -->
+  <div id="speakerModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md hidden transition-all duration-300">
+    <div class="bg-[#07132c] border border-cyan-400/60 rounded-3xl max-w-lg w-full p-6 sm:p-7 text-left shadow-2xl relative overflow-hidden">
+      <!-- Latar Belakang Cahaya Hiasan Modal -->
+      <div class="absolute -top-12 -right-12 w-36 h-36 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      <!-- Butang Tutup Modal -->
+      <button onclick="closeSpeakerModal()" aria-label="Tutup" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full hover:bg-slate-800/60 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <!-- Pengepala Modal: Gambar & Nama Penceramah -->
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 pb-5 border-b border-slate-700/70">
+        <div class="relative">
+          <img id="speakerImage" src="" alt="Foto Penceramah" class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border-2 border-cyan-400/80 shadow-lg shadow-cyan-500/30">
+          <span id="speakerLotBadge" class="absolute -bottom-2 -right-2 text-[10px] font-display font-extrabold px-2 py-0.5 rounded-md bg-amber-500 text-slate-950 border border-amber-300 shadow">LOT 01</span>
+        </div>
+        <div class="text-center sm:text-left flex-1">
+          <span id="speakerSlotBadge" class="inline-block text-[11px] font-bold text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800 uppercase tracking-wider mb-1.5">Slot 1</span>
+          <h3 id="speakerName" class="text-lg sm:text-xl font-extrabold text-white leading-tight">Nama Penceramah</h3>
+          <p id="speakerRole" class="text-xs sm:text-sm text-cyan-300 font-medium mt-1">Jawatan & Organisasi</p>
+          <p id="speakerTopic" class="text-xs text-amber-300 font-semibold mt-1">Topik:</p>
+        </div>
+      </div>
+      <!-- Kandungan Biodata -->
+      <div class="py-4 space-y-4">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1 flex items-center gap-1.5">
+            <i data-lucide="file-text" class="w-3.5 h-3.5 text-cyan-400"></i>Profil Ringkas & Latar Belakang
+          </h4>
+          <p id="speakerBio" class="text-xs sm:text-sm text-slate-300 leading-relaxed bg-[#030816]/70 p-3.5 rounded-xl border border-slate-800">
+            Keterangan biodata penceramah akan dipaparkan di sini.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs">
+          <div class="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+            <span class="text-slate-400 block text-[11px]">Kepakaran:</span>
+            <span id="speakerExpertise" class="text-white font-medium">—</span>
+          </div>
+          <div class="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+            <span class="text-slate-400 block text-[11px]">Format Sesi:</span>
+            <span id="speakerFormat" class="text-cyan-300 font-medium">—</span>
+          </div>
+        </div>
+      </div>
+      <!-- Butang Tutup Bawah -->
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeSpeakerModal()" class="w-full sm:w-auto px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 rounded-xl text-white font-bold text-xs uppercase tracking-wider shadow-lg shadow-cyan-500/20 transition-all">
+          Tutup Paparan
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal Pengesahan Pendaftaran — Template Emel Digital -->
   <div id="regModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden">
     <!-- Outer border frame — cyan digital glow -->
@@ -1128,7 +1228,11 @@
           </div>
 
           <!-- Nota penting -->
-          
+          <p class="text-slate-200 text-xs leading-relaxed" style="text-shadow:0 1px 3px rgba(0,0,0,0.7);">
+            Sila ambil maklum bahawa kehadiran ke program ini adalah <strong class="text-white">diwajibkan</strong>.
+            Sebarang perubahan atau pembatalan penyertaan hendaklah dimaklumkan kepada urus setia
+            selewat-lewatnya <strong class="text-white">5 hari bekerja dari emel ini dihantar.</strong>
+          </p>
 
           <p class="text-slate-400 text-xs">Sekian, terima kasih.</p>
         </div>
@@ -1228,7 +1332,16 @@
         desc: "Inisiatif Identiti Digital Nasional untuk transaksi dalam talian yang selamat dan telus. Peserta boleh mendapatkan khidmat pendaftaran segera dan panduan pengesahan digital rasmi.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 1 (Sebelah Stor & SIP Kanan)",
-        icon: "shield-check"
+        icon: "shield-check",
+        speaker: {
+          name: "Ts. Dr. Shamsul Anuar bin Rahim",
+          role: "Ketua Arkitek Solusi Identiti Digital, MyDigital ID Sdn Bhd",
+          topic: "Identiti Digital Nasional: Transformasi Akses Selamat Perkhidmatan Awam",
+          photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+          bio: "Mempunyai lebih 15 tahun pengalaman dalam bidang kriptografi, keselamatan siber awam, dan pelaksanaan teknologi keselamatan PKI di peringkat kebangsaan.",
+          expertise: "PKI, Kriptografi & Keselamatan Siber",
+          format: "Syarahan Perdana, Demo & Kuiz"
+        }
       },
       2: {
         title: "Microsoft Malaysia",
@@ -1236,7 +1349,16 @@
         desc: "Pameran solusi AI Copilot untuk pengurusan dokumen kementerian, automasi proses kerja, dan perkhidmatan kolaborasi awan moden.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 2 (Hadapan Bilik Menunggu VIP)",
-        icon: "layout-grid"
+        icon: "layout-grid",
+        speaker: {
+          name: "Farah Nadia binti Kamaruddin",
+          role: "Pakar Solusi Awan & AI Sektor Awam, Microsoft Malaysia",
+          topic: "Memperkasa Produktiviti Sektor Awam Melalui Microsoft Copilot & Generative AI",
+          photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+          bio: "Peneraju inisiatif transformasi digital sektor kerajaan bersama Microsoft, pakar dalam integrasi AI generatif bagi pengurusan dokumen dan automasi alur kerja.",
+          expertise: "Generative AI, Microsoft 365 Copilot",
+          format: "Pembentangan Interaktif & Sesi Soal Jawab"
+        }
       },
       3: {
         title: "Amazon Web Services (AWS)",
@@ -1244,7 +1366,16 @@
         desc: "Solusi awan berdaya tahan tinggi, keselamatan data kerajaan, dan pemodenan sistem pelancongan pintar berasaskan infrastruktur cloud berskala besar.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 3 (Bahagian Belakang Kanan)",
-        icon: "cloud"
+        icon: "cloud",
+        speaker: {
+          name: "Irfan Hakim bin Zakaria",
+          role: "Arkitek Penyelesaian Kanan (Senior Solutions Architect), AWS Malaysia",
+          topic: "Infrastruktur Awan Berdaya Tahan & Analitik Data Pelancongan Generasi Baharu",
+          photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+          bio: "Berpengalaman membimbing pelbagai kementerian di Asia Tenggara dalam merangka seni bina awan selamat, pematuhan kawal selia data dan migrasi sistem legasi.",
+          expertise: "Cloud Architecture & Data Analytics",
+          format: "Kajian Kes & Kuiz Berhadiah"
+        }
       },
       4: {
         title: "HP Malaysia",
@@ -1252,7 +1383,16 @@
         desc: "Pendedahan gajet dan komputer riba berkuasa AI terkini dengan perlindungan keselamatan perkakasan endpoint HP Wolf Security.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 4 (Bahagian Belakang Kiri)",
-        icon: "monitor"
+        icon: "monitor",
+        speaker: {
+          name: "Marcus Tan Wei Lun",
+          role: "Pengurus Pembangunan Produk Komersial & AI Endpoint, HP PPS Sales Sdn Bhd",
+          topic: "Keselamatan Perkakasan Hibrid & Komputer Riba Berkuasa AI Masa Depan",
+          photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+          bio: "Pakar strategi perkakasan korporat yang memfokuskan kepada perlindungan siber berasaskan silikon (HP Wolf Security) untuk tempat kerja moden dan mobiliti pegawai.",
+          expertise: "Endpoint Security & AI Hardware PC",
+          format: "Pendedahan Gajet & Kuiz"
+        }
       },
       5: {
         title: "Canon Malaysia",
@@ -1260,7 +1400,16 @@
         desc: "Teknologi pendigitalan gambar, arkib digital resolusi tinggi untuk khazanah warisan budaya, serta peranti imbasan dokumen pintar.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 5 (Sebelah Pintu Keluar Kiri Bawah)",
-        icon: "camera"
+        icon: "camera",
+        speaker: {
+          name: "Nurul Aini binti Hashim",
+          role: "Ketua Bahagian Solusi Pengimejan Dokumen & Warisan, Canon Marketing Malaysia",
+          topic: "Pemeliharaan Khazanah Warisan & Seni Budaya Melalui Pendigitalan Pengimejan Ultra-Tinggi",
+          photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+          bio: "Terlibat dalam pelbagai projek pemuliharaan digital khazanah negara bersama arkib dan muzium menggunakan teknologi pengimbasan dokumen serta sensor visual resolusi tinggi.",
+          expertise: "Digital Archiving, Optical Scanning & Imaging",
+          format: "Demonstrasi Produk & Q&A"
+        }
       },
       6: {
         title: "Ace Team",
@@ -1268,7 +1417,16 @@
         desc: "Integrasi perkakasan dan rangkaian selamat peringkat perusahaan, sokongan pemeliharaan data pelancongan dan transformasi digital.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 6 (Kiri Dewan, Sebelah Pintu Keluar)",
-        icon: "network"
+        icon: "network",
+        speaker: {
+          name: "Mohd Razif bin Sulaiman",
+          role: "Pengarah Teknikal Rangkaian & Integrasi Sistem, Ace Team Networks",
+          topic: "Membina Ketahanan Infrastruktur Rangkaian Berkelajuan Tinggi Sektor Pelancongan",
+          photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
+          bio: "Jurutera sistem bertauliah dengan pengalaman luas dalam reka bentuk pusat data, SD-WAN dan integrasi keselamatan siber berskala besar untuk sektor awam.",
+          expertise: "Enterprise Networking & Zero Trust Access",
+          format: "Pembentangan Teknikal & Sesi Q&A"
+        }
       },
       7: {
         title: "OrenG",
@@ -1276,7 +1434,16 @@
         desc: "Pembangunan perisian dan platform pengalaman pelancongan maya interaktif serta integrasi analitik pengunjung industri pelancongan.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 7 (Tengah Dewan, Sebelah Photo Wall)",
-        icon: "terminal"
+        icon: "terminal",
+        speaker: {
+          name: "Siti Zulaikha binti Othman",
+          role: "Ketua Pegawai Teknologi (CTO), OrenG Interactive Solutions",
+          topic: "Aplikasi Pelancongan Pintar & Pengalaman Maya Interaktif untuk Pelancong Masa Kini",
+          photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
+          bio: "Pembangun aplikasi mudah alih dan perisian interaktif pemenang anugerah yang memfokuskan kepada pembangunan modul realiti terimbuh (AR) bagi sektor pelancongan tempatan.",
+          expertise: "App Development, UX/UI, AR Tourism",
+          format: "Demonstrasi Aplikasi & Kuiz"
+        }
       },
       8: {
         title: "NGO — Robotik",
@@ -1284,7 +1451,16 @@
         desc: "Pameran robotik dan automasi pintar, demonstrasi interaksi robot untuk sambutan tetamu serta pemerkasaan inovasi belia kebudayaan.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
         loc: "Lot Pempamer 8 (Tengah Dewan, Baris Kedua)",
-        icon: "bot"
+        icon: "bot",
+        speaker: {
+          name: "Prof. Madya Dr. Khairul Azman bin Jamil",
+          role: "Presiden Persatuan Pembangunan Robotik & Automasi Belia Kebangsaan",
+          topic: "Robotik Sosial & Automasi Pintar: Inovasi Khidmat Pelanggan Sektor Pelancongan & Budaya",
+          photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+          bio: "Penyelidik aktif bidang robotik servis humanoid, telah membina lebih 20 prototaip robot interaksi sosial yang dipamerkan di persidangan antarabangsa.",
+          expertise: "Social Robotics, AI Vision & Mechatronics",
+          format: "Demonstrasi Langsung Robot & Kuiz"
+        }
       },
       9: {
         title: "Rakan Inovasi Digital MOTAC",
@@ -1292,7 +1468,8 @@
         desc: "Reruai pameran khas inisiatif transformasi digital dari pelbagai bahagian MOTAC, Jabatan Kebudayaan & Kesenian Negara (JKKN), Tourism Malaysia dan ASWARA.",
         activity: "Pameran Sistem & Khidmat Nasihat",
         loc: "Lot Pempamer 9 (Tengah Kanan, Baris Pertama)",
-        icon: "sparkles"
+        icon: "sparkles",
+        speaker: null
       },
       10: {
         title: "Kaunter Servis BPM MOTAC",
@@ -1300,7 +1477,8 @@
         desc: "Kaunter bantuan teknikal BPM: semakan akaun MyGovUC, bantuan DDMS 2.0, khidmat keselamatan kata laluan dan pendaftaran VPN.",
         activity: "Klinik ICT & Kaunter Bantuan Langsung",
         loc: "Lot Pempamer 10 (Tengah Kanan, Baris Kedua)",
-        icon: "life-buoy"
+        icon: "life-buoy",
+        speaker: null
       }
     };
 
@@ -1325,11 +1503,51 @@
       document.getElementById('detailActivity').innerText = data.activity;
       document.getElementById('detailLocation').innerText = data.loc;
 
+      // Kawalan paparan butang biodata pada panel pelan dewan
+      const panelBtn = document.getElementById('panelSpeakerBtn');
+      if (panelBtn) {
+        if (data.speaker) {
+          panelBtn.classList.remove('hidden');
+          panelBtn.setAttribute('onclick', `openSpeakerModal(${id})`);
+        } else {
+          panelBtn.classList.add('hidden');
+        }
+      }
+
       // Update icon dynamically
       const iconContainer = document.getElementById('detailIcon');
       iconContainer.setAttribute('data-lucide', data.icon);
       lucide.createIcons();
     }
+
+    // Modal Biodata Penceramah
+    const speakerModal = document.getElementById('speakerModal');
+
+    function openSpeakerModal(id) {
+      const data = boothDatabase[id];
+      if (!data || !data.speaker) return;
+      const spk = data.speaker;
+      document.getElementById('speakerImage').src = spk.photo;
+      document.getElementById('speakerImage').alt = spk.name;
+      document.getElementById('speakerLotBadge').innerText = `LOT ${String(id).padStart(2, '0')}`;
+      document.getElementById('speakerSlotBadge').innerText = data.subtitle.split('•')[0].trim() || `Slot ${id}`;
+      document.getElementById('speakerName').innerText = spk.name;
+      document.getElementById('speakerRole').innerText = spk.role;
+      document.getElementById('speakerTopic').innerText = `Topik: ${spk.topic}`;
+      document.getElementById('speakerBio').innerText = spk.bio;
+      document.getElementById('speakerExpertise').innerText = spk.expertise;
+      document.getElementById('speakerFormat').innerText = spk.format;
+      speakerModal.classList.remove('hidden');
+      lucide.createIcons();
+    }
+
+    function closeSpeakerModal() {
+      speakerModal.classList.add('hidden');
+    }
+
+    speakerModal.addEventListener('click', function(e) {
+      if (e.target === this) closeSpeakerModal();
+    });
 
     // ============================================================
     // !! SATU-SATUNYA TEMPAT YANG PERLU DIUBAH !!
