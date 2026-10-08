@@ -265,7 +265,7 @@
           </div>
           <div>
             <dt class="text-slate-400">Pengisian Utama:</dt>
-            <dd class="text-white font-semibold mt-0.5">8 Slot Pembentangan Pakar + 10 Lot Ruang Pameran Teknologi + Sesi Kuiz Interaktif</dd>
+            <dd class="text-white font-semibold mt-0.5">8 Slot Pembentangan Pakar + 11 Lot Ruang Pameran Teknologi + Sesi Kuiz Interaktif</dd>
           </div>
         </dl>
       </div>
@@ -283,7 +283,7 @@
           Pelan Susun Atur Dewan Sanggar Pujangga
         </h2>
         <p class="text-slate-400 mt-2 text-sm">
-          Klik mana-mana lot pempamer (Pempamer 1 - 10) atau zon kemudahan pada peta dewan di bawah untuk melihat butiran terperinci.
+          Klik mana-mana lot pempamer (Lot 1 - 11) pada pelan dewan di bawah untuk melihat butiran terperinci.
         </p>
       </div>
 
@@ -296,7 +296,7 @@
           <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800 text-xs">
             <div class="flex items-center gap-2 text-slate-300 font-semibold">
               <i data-lucide="maximize-2" class="w-4 h-4 text-cyan-400"></i>
-              <span>Pelan Dewan (Lakaran Tidak Mengikut Skala)</span>
+              <span>Pelan Dewan (Susun Atur Berpusat & Tempat Duduk Luas)</span>
             </div>
             <span class="text-[11px] text-cyan-300 font-mono bg-cyan-950 px-2 py-0.5 rounded border border-cyan-800">
               Interaktif • Sila Klik Lot
@@ -305,165 +305,228 @@
 
           <!-- Responsive SVG of Dewan Floor Plan -->
           <div class="w-full overflow-hidden flex justify-center bg-[#050e20] rounded-xl border border-slate-800/80 p-2 sm:p-4">
-            <svg viewBox="0 0 1000 1300" class="w-full h-auto max-w-[700px] select-none" xmlns="http://www.w3.org/2000/svg">
-              
-              <!-- Outer Hall Boundaries -->
-              <rect x="50" y="50" width="900" height="1200" fill="#09142b" stroke="#334155" stroke-width="6" rx="8" />
+            <svg viewBox="0 0 1000 1340" class="w-full h-auto max-w-[720px] select-none" xmlns="http://www.w3.org/2000/svg">
 
-              <!-- DOORS: Pintu Masuk Utama & Keluar (Kiri) -->
-              <!-- Pintu Masuk Utama Kaunter Pendaftaran -->
-              <rect x="42" y="160" width="16" height="90" fill="#10b981" rx="3" />
-              <text x="25" y="200" fill="#34d399" font-size="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="end">PINTU MASUK UTAMA</text>
-              <text x="25" y="222" fill="#94a3b8" font-size="12" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">Kaunter Pendaftaran →</text>
+              <!-- Sempadan Dinding Dewan -->
+              <rect x="50" y="30" width="900" height="1280" fill="#09142b" stroke="#334155" stroke-width="5" rx="6" />
 
-              <!-- Pintu Keluar 1 -->
-              <rect x="42" y="400" width="16" height="70" fill="#10b981" rx="3" />
-              <text x="25" y="442" fill="#34d399" font-size="15" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="end">PINTU KELUAR ←</text>
+              <!-- PINTU MASUK UTAMA -->
+              <rect x="42" y="140" width="16" height="85" fill="#10b981" rx="3" />
+              <text x="25" y="165" fill="#34d399" font-size="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" text-anchor="end">PINTU MASUK UTAMA</text>
+              <text x="25" y="183" fill="#94a3b8" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">Laluan masuk &amp; keluar</text>
+              <text x="25" y="199" fill="#cbd5e1" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="end">Kaunter Pendaftaran ↔</text>
 
-              <!-- Pintu Keluar 2 -->
-              <rect x="42" y="700" width="16" height="70" fill="#10b981" rx="3" />
-              <text x="25" y="742" fill="#34d399" font-size="15" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="end">PINTU KELUAR ←</text>
-
-              <!-- Pintu Keluar Belakang -->
-              <rect x="460" y="1242" width="80" height="16" fill="#10b981" rx="3" />
-              <text x="500" y="1285" fill="#34d399" font-size="15" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" text-anchor="middle">↓ PINTU KELUAR</text>
-
-              <!-- PENTAS UTAMA -->
-              <rect x="270" y="60" width="340" height="90" fill="#881337" fill-opacity="0.35" stroke="#e11d48" stroke-width="3" rx="4" />
-              <text x="440" y="112" fill="#fecdd3" font-family="'Orbitron', sans-serif" font-size="22" font-weight="800" text-anchor="middle" letter-spacing="2">PENTAS UTAMA</text>
-
-              <!-- Meja Teknikal ICT (Kiri Pentas) -->
-              <polygon points="170,100 230,80 250,110 190,130" fill="#881337" fill-opacity="0.3" stroke="#e11d48" stroke-width="2" />
-              <text x="180" y="72" fill="#fda4af" font-size="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700">MEJA TEKNIKAL ICT</text>
-
-              <!-- Rostrum (Kanan Pentas) -->
-              <polygon points="650,80 710,100 690,130 630,110" fill="#881337" fill-opacity="0.3" stroke="#e11d48" stroke-width="2" />
-              <text x="670" y="72" fill="#fda4af" font-size="13" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700">ROSTRUM</text>
-
-              <!-- TEMPAT DUDUK VIP (7 Kotak Kerusi) -->
-              <g id="vipSeats">
-                <rect x="245" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="300" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="355" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="410" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="465" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="520" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <rect x="575" y="175" width="40" height="35" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="2" />
-                <text x="635" y="198" fill="#fda4af" font-size="14" font-weight="700">← TEMPAT DUDUK VIP</text>
+              <!-- DILARANG MASUK 1 -->
+              <g>
+                <line x1="50" y1="475" x2="50" y2="545" stroke="#ef4444" stroke-width="8" stroke-dasharray="8,4" />
+                <circle cx="35" cy="538" r="7" fill="#ef4444" />
+                <rect x="30" y="536.5" width="10" height="3" fill="#ffffff" />
+                <text x="25" y="500" fill="#f87171" font-size="12" font-weight="800" text-anchor="end">DILARANG MASUK</text>
+                <text x="25" y="516" fill="#94a3b8" font-size="10" text-anchor="end">Pintu ditutup, dihalang</text>
+                <text x="25" y="529" fill="#94a3b8" font-size="10" text-anchor="end">booth pameran</text>
               </g>
 
-              <!-- TEMPAT DUDUK TETAMU / PESERTA (Auditorium Trapezoid) -->
-              <polygon points="225,235 635,235 605,395 255,395" fill="#0f172a" stroke="#64748b" stroke-width="2" />
-              <!-- Dot Matrix Grid Simulating Rows -->
-              <g fill="#475569" opacity="0.6">
-                <circle cx="270" cy="255" r="4"/><circle cx="300" cy="255" r="4"/><circle cx="330" cy="255" r="4"/><circle cx="360" cy="255" r="4"/><circle cx="490" cy="255" r="4"/><circle cx="520" cy="255" r="4"/><circle cx="550" cy="255" r="4"/><circle cx="580" cy="255" r="4"/>
-                <circle cx="275" cy="285" r="4"/><circle cx="305" cy="285" r="4"/><circle cx="335" cy="285" r="4"/><circle cx="365" cy="285" r="4"/><circle cx="485" cy="285" r="4"/><circle cx="515" cy="285" r="4"/><circle cx="545" cy="285" r="4"/><circle cx="575" cy="285" r="4"/>
-                <circle cx="280" cy="315" r="4"/><circle cx="310" cy="315" r="4"/><circle cx="340" cy="315" r="4"/><circle cx="370" cy="315" r="4"/><circle cx="480" cy="315" r="4"/><circle cx="510" cy="315" r="4"/><circle cx="540" cy="315" r="4"/><circle cx="570" cy="315" r="4"/>
-                <circle cx="285" cy="370" r="4"/><circle cx="315" cy="370" r="4"/><circle cx="345" cy="370" r="4"/><circle cx="375" cy="370" r="4"/><circle cx="475" cy="370" r="4"/><circle cx="505" cy="370" r="4"/><circle cx="535" cy="370" r="4"/><circle cx="565" cy="370" r="4"/>
-              </g>
-              <rect x="280" y="300" width="300" height="38" rx="4" fill="#020617" stroke="#94a3b8" stroke-width="1.5" />
-              <text x="430" y="325" fill="#f8fafc" font-size="15" font-weight="700" text-anchor="middle">TEMPAT DUDUK TETAMU / PESERTA</text>
-
-              <!-- SCREEN INTERACTIVE PANEL (SIP) - 5 Points -->
-              <g id="sipGroup" fill="#94a3b8" stroke="#475569" stroke-width="1">
-                <!-- SIP 1 (Kiri Atas) -->
-                <rect x="65" y="150" width="40" height="20" rx="8" />
-                <text x="85" y="164" fill="#0f172a" font-size="10" font-weight="900" text-anchor="middle">SIP</text>
-                <!-- SIP 2 (Kiri Tengah) -->
-                <rect x="65" y="380" width="40" height="20" rx="8" />
-                <text x="85" y="394" fill="#0f172a" font-size="10" font-weight="900" text-anchor="middle">SIP</text>
-                <!-- SIP 3 (Kanan Atas) -->
-                <rect x="735" y="295" width="40" height="20" rx="8" />
-                <text x="755" y="309" fill="#0f172a" font-size="10" font-weight="900" text-anchor="middle">SIP</text>
-                <!-- SIP 4 (Bawah Kanan) -->
-                <rect x="655" y="870" width="40" height="20" rx="8" />
-                <text x="675" y="884" fill="#0f172a" font-size="10" font-weight="900" text-anchor="middle">SIP</text>
-                <!-- SIP 5 (Bawah Kiri) -->
-                <rect x="145" y="935" width="40" height="20" rx="8" />
-                <text x="165" y="949" fill="#0f172a" font-size="10" font-weight="900" text-anchor="middle">SIP</text>
+              <!-- DILARANG MASUK 2 -->
+              <g>
+                <line x1="50" y1="785" x2="50" y2="855" stroke="#ef4444" stroke-width="8" stroke-dasharray="8,4" />
+                <circle cx="35" cy="848" r="7" fill="#ef4444" />
+                <rect x="30" y="846.5" width="10" height="3" fill="#ffffff" />
+                <text x="25" y="810" fill="#f87171" font-size="12" font-weight="800" text-anchor="end">DILARANG MASUK</text>
+                <text x="25" y="826" fill="#94a3b8" font-size="10" text-anchor="end">Pintu ditutup, dihalang</text>
+                <text x="25" y="839" fill="#94a3b8" font-size="10" text-anchor="end">booth pameran</text>
               </g>
 
-              <!-- BILIK STOR & BILIK MENUNGGU VIP (Kanan) -->
-              <rect x="892" y="410" width="16" height="70" fill="#64748b" rx="2" />
-              <text x="920" y="450" fill="#cbd5e1" font-size="14" font-weight="700">STOR</text>
+              <!-- PINTU KELUAR -->
+              <rect x="460" y="1302" width="80" height="14" fill="#10b981" rx="3" />
+              <text x="500" y="1332" fill="#34d399" font-size="14" font-weight="800" text-anchor="middle">↓ PINTU KELUAR</text>
 
-              <rect x="892" y="660" width="16" height="140" fill="#64748b" rx="2" />
-              <text x="920" y="735" fill="#cbd5e1" font-size="14" font-weight="700">BILIK MENUNGGU VIP</text>
+              <!-- Pentas Utama -->
+              <rect x="300" y="35" width="400" height="75" fill="#881337" fill-opacity="0.35" stroke="#e11d48" stroke-width="2.5" rx="4" />
+              <text x="500" y="80" fill="#fecdd3" font-family="'Orbitron', sans-serif" font-size="20" font-weight="800" text-anchor="middle" letter-spacing="2">PENTAS UTAMA</text>
 
-              <!-- 10 LOT RUANG PEMPAMER -->
+              <!-- Meja Teknikal ICT &amp; Rostrum -->
+              <polygon points="190,85 245,60 268,85 213,110" fill="#881337" fill-opacity="0.3" stroke="#e11d48" stroke-width="1.8" />
+              <text x="210" y="55" fill="#fda4af" font-size="11" font-weight="700" text-anchor="middle">MEJA TEKNIKAL ICT</text>
+              <polygon points="755,60 810,85 787,110 732,85" fill="#881337" fill-opacity="0.3" stroke="#e11d48" stroke-width="1.8" />
+              <text x="770" y="55" fill="#fda4af" font-size="11" font-weight="700" text-anchor="middle">ROSTRUM</text>
 
-              <!-- BOOTH 1: MyDigitalID -->
+              <!-- Tempat Duduk VIP -->
+              <g id="vipSeatsGroup">
+                <rect x="345" y="125" width="44" height="34" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+                <rect x="410" y="125" width="44" height="34" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+                <rect x="478" y="125" width="44" height="34" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+                <rect x="546" y="125" width="44" height="34" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+                <rect x="612" y="125" width="44" height="34" rx="6" fill="#1e293b" stroke="#f43f5e" stroke-width="1.8" />
+                <text x="678" y="148" fill="#fda4af" font-size="12" font-weight="700">← TEMPAT DUDUK VIP (5)</text>
+              </g>
+
+              <!-- RUANG TEMPAT DUDUK TETAMU / PESERTA -->
+              <polygon points="210,175 790,175 745,395 255,395" fill="#0f172a" stroke="#64748b" stroke-width="2" />
+              <g stroke="#475569" stroke-width="1.2" stroke-dasharray="4,4">
+                <line x1="240" y1="205" x2="760" y2="205" />
+                <line x1="250" y1="245" x2="750" y2="245" />
+                <line x1="260" y1="285" x2="740" y2="285" />
+                <line x1="270" y1="325" x2="730" y2="325" />
+                <line x1="280" y1="365" x2="720" y2="365" />
+              </g>
+              <text x="805" y="240" fill="#94a3b8" font-size="12" font-weight="700">← 110 KERUSI</text>
+              <text x="815" y="258" fill="#64748b" font-size="10">5 baris × (11 + 11)</text>
+              <rect x="330" y="335" width="340" height="36" rx="6" fill="#020617" stroke="#94a3b8" stroke-width="1.5" />
+              <text x="500" y="358" fill="#f8fafc" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="1">TEMPAT DUDUK TETAMU / PESERTA</text>
+
+              <!-- SIP (Interactive Panel) -->
+              <g fill="#94a3b8" stroke="#475569" stroke-width="1">
+                <rect x="70" y="132" width="34" height="18" rx="6" />
+                <text x="87" y="145" fill="#0f172a" font-size="9" font-weight="900" text-anchor="middle">SIP</text>
+                <rect x="68" y="465" width="34" height="18" rx="6" />
+                <text x="85" y="478" fill="#0f172a" font-size="9" font-weight="900" text-anchor="middle">SIP</text>
+                <rect x="855" y="280" width="34" height="18" rx="6" />
+                <text x="872" y="293" fill="#0f172a" font-size="9" font-weight="900" text-anchor="middle">SIP</text>
+                <rect x="185" y="930" width="34" height="18" rx="6" />
+                <text x="202" y="943" fill="#0f172a" font-size="9" font-weight="900" text-anchor="middle">SIP</text>
+                <rect x="750" y="895" width="34" height="18" rx="6" />
+                <text x="767" y="908" fill="#0f172a" font-size="9" font-weight="900" text-anchor="middle">SIP</text>
+              </g>
+
+              <!-- Stor &amp; Bilik Menunggu VIP -->
+              <rect x="942" y="465" width="8" height="60" fill="#64748b" rx="2" />
+              <text x="965" y="500" fill="#cbd5e1" font-size="12" font-weight="700">STOR</text>
+              <rect x="942" y="745" width="8" height="110" fill="#64748b" rx="2" />
+              <text x="965" y="805" fill="#cbd5e1" font-size="12" font-weight="700">BILIK MENUNGGU VIP</text>
+
+              <!-- 11 LOT PEMPAMER &amp; MEJA -->
+
+              <!-- LOT 1: ACE TEAM -->
               <g class="booth-group" onclick="selectBooth(1)">
-                <rect id="boothSvg1" class="booth-rect" x="670" y="435" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="710" y="480" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="710" y="515" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">1</text>
+                <rect id="boothSvg1" class="booth-rect" x="710" y="525" width="95" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="757" y="552" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="757" y="587" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">1</text>
+                <text x="757" y="617" fill="#cbd5e1" font-size="11" font-weight="700" text-anchor="middle">Ace Team</text>
+                <rect x="672" y="555" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="684" y="586" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="732" y="650" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="757" y="664" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
               </g>
 
-              <!-- BOOTH 2: Microsoft -->
+              <!-- LOT 2: ORENG -->
               <g class="booth-group" onclick="selectBooth(2)">
-                <rect id="boothSvg2" class="booth-rect" x="670" y="640" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="710" y="685" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="710" y="720" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">2</text>
+                <rect id="boothSvg2" class="booth-rect" x="710" y="725" width="95" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="757" y="752" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="757" y="787" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">2</text>
+                <text x="757" y="817" fill="#cbd5e1" font-size="11" font-weight="700" text-anchor="middle">Oreng</text>
+                <rect x="672" y="755" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="684" y="786" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="732" y="850" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="757" y="864" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
               </g>
 
-              <!-- BOOTH 3: Amazon Web Services (AWS) -->
-              <g class="booth-group" onclick="selectBooth(3)">
-                <rect id="boothSvg3" class="booth-rect" x="525" y="940" width="130" height="80" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="590" y="975" fill="#fcd34d" font-size="12" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="590" y="1005" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="26" font-weight="900" text-anchor="middle">3</text>
-              </g>
-
-              <!-- BOOTH 4: HP Malaysia -->
-              <g class="booth-group" onclick="selectBooth(4)">
-                <rect id="boothSvg4" class="booth-rect" x="235" y="940" width="130" height="80" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="300" y="975" fill="#fcd34d" font-size="12" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="300" y="1005" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="26" font-weight="900" text-anchor="middle">4</text>
-              </g>
-
-              <!-- BOOTH 5: Canon Malaysia -->
-              <g class="booth-group" onclick="selectBooth(5)">
-                <rect id="boothSvg5" class="booth-rect" x="100" y="740" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="140" y="785" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="140" y="820" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">5</text>
-              </g>
-
-              <!-- BOOTH 6: Ace Team -->
-              <g class="booth-group" onclick="selectBooth(6)">
-                <rect id="boothSvg6" class="booth-rect" x="125" y="535" width="80" height="115" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="165" y="580" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="165" y="615" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">6</text>
-              </g>
-
-              <!-- BOOTH 7: OrenG -->
-              <g class="booth-group" onclick="selectBooth(7)">
-                <rect id="boothSvg7" class="booth-rect" x="320" y="520" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="360" y="565" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="360" y="600" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">7</text>
-              </g>
-
-              <!-- BOOTH 8: NGO — Robotik -->
-              <g class="booth-group" onclick="selectBooth(8)">
-                <rect id="boothSvg8" class="booth-rect" x="320" y="680" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="360" y="725" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="360" y="760" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">8</text>
-              </g>
-
-              <!-- BOOTH 9: Inovasi & Transformasi Digital MOTAC -->
+              <!-- LOT 9: IGS PROTECH -->
               <g class="booth-group" onclick="selectBooth(9)">
-                <rect id="boothSvg9" class="booth-rect" x="430" y="520" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="470" y="565" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="470" y="600" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">9</text>
+                <rect id="boothSvg9" class="booth-rect" x="535" y="525" width="95" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="582" y="552" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="582" y="587" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">9</text>
+                <text x="582" y="617" fill="#cbd5e1" font-size="11" font-weight="700" text-anchor="middle">IGS Protech</text>
+                <rect x="557" y="497" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="582" y="511" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+                <rect x="638" y="555" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="650" y="586" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
               </g>
 
-              <!-- BOOTH 10: Kaunter Perkhidmatan Digital BPM MOTAC -->
+              <!-- LOT 10: MICROSOFT -->
               <g class="booth-group" onclick="selectBooth(10)">
-                <rect id="boothSvg10" class="booth-rect" x="430" y="680" width="80" height="120" rx="4" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2.5" />
-                <text x="470" y="725" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">PEMPAMER</text>
-                <text x="470" y="760" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">10</text>
+                <rect id="boothSvg10" class="booth-rect" x="535" y="725" width="95" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="582" y="752" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="582" y="787" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="28" font-weight="900" text-anchor="middle">10</text>
+                <text x="582" y="817" fill="#cbd5e1" font-size="11" font-weight="700" text-anchor="middle">Microsoft</text>
+                <rect x="638" y="755" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="650" y="786" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="557" y="850" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="582" y="864" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
               </g>
 
-              <!-- Dividers Between Booth Aisles -->
-              <line x1="410" y1="510" x2="410" y2="810" stroke="#334155" stroke-width="2" stroke-dasharray="4" />
+              <!-- LOT 11: MYDIGITALID -->
+              <g class="booth-group" onclick="selectBooth(11)">
+                <rect id="boothSvg11" class="booth-rect" x="415" y="512" width="80" height="96" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="455" y="534" fill="#fcd34d" font-size="9" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="455" y="564" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">11</text>
+                <text x="455" y="588" fill="#cbd5e1" font-size="10" font-weight="700" text-anchor="middle">MyDigitalID</text>
+                <rect x="430" y="485" width="50" height="19" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="455" y="498" fill="#38bdf8" font-size="9" font-weight="700" text-anchor="middle">K</text>
+                <rect x="383" y="530" width="24" height="50" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="395" y="560" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+              </g>
+
+              <!-- LOT 7: BPM -->
+              <g class="booth-group" onclick="selectBooth(7)">
+                <rect id="boothSvg7" class="booth-rect" x="415" y="620" width="80" height="88" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="455" y="642" fill="#fcd34d" font-size="9" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="455" y="670" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">7</text>
+                <text x="455" y="692" fill="#cbd5e1" font-size="10" font-weight="700" text-anchor="middle">BPM</text>
+                <rect x="383" y="638" width="24" height="50" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="395" y="668" fill="#38bdf8" font-size="9" font-weight="700" text-anchor="middle">K/P</text>
+              </g>
+
+              <!-- LOT 8: NGO (ROBOTIK) -->
+              <g class="booth-group" onclick="selectBooth(8)">
+                <rect id="boothSvg8" class="booth-rect" x="415" y="725" width="80" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="455" y="749" fill="#fcd34d" font-size="9" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="455" y="780" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">8</text>
+                <text x="455" y="805" fill="#cbd5e1" font-size="10" font-weight="700" text-anchor="middle">NGO</text>
+                <text x="455" y="821" fill="#94a3b8" font-size="9" font-weight="600" text-anchor="middle">(Robotik)</text>
+                <rect x="383" y="755" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="395" y="786" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="430" y="850" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="455" y="864" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+              </g>
+
+              <!-- LOT 6: HEWLETT-PACKARD (HP) -->
+              <g class="booth-group" onclick="selectBooth(6)">
+                <rect id="boothSvg6" class="booth-rect" x="200" y="585" width="80" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="240" y="610" fill="#fcd34d" font-size="9" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="240" y="642" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">6</text>
+                <text x="240" y="666" fill="#cbd5e1" font-size="10" font-weight="700" text-anchor="middle">Hewlett-</text>
+                <text x="240" y="680" fill="#cbd5e1" font-size="10" font-weight="700" text-anchor="middle">Packard (HP)</text>
+                <rect x="288" y="618" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="300" y="649" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="215" y="710" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="240" y="724" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+              </g>
+
+              <!-- LOT 5: AMAZON -->
+              <g class="booth-group" onclick="selectBooth(5)">
+                <rect id="boothSvg5" class="booth-rect" x="200" y="785" width="80" height="118" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="240" y="810" fill="#fcd34d" font-size="9" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="240" y="842" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">5</text>
+                <text x="240" y="870" fill="#cbd5e1" font-size="11" font-weight="700" text-anchor="middle">Amazon</text>
+                <rect x="288" y="818" width="24" height="52" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="300" y="849" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">P</text>
+                <rect x="215" y="910" width="50" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="240" y="924" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+              </g>
+
+              <!-- LOT 4: CANON -->
+              <g class="booth-group" onclick="selectBooth(4)">
+                <rect id="boothSvg4" class="booth-rect" x="320" y="960" width="125" height="85" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="382" y="988" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="382" y="1016" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">4</text>
+                <text x="382" y="1034" fill="#cbd5e1" font-size="12" font-weight="700" text-anchor="middle">Canon</text>
+                <rect x="352" y="934" width="60" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="382" y="948" fill="#38bdf8" font-size="9" font-weight="700" text-anchor="middle">P</text>
+                <rect x="453" y="980" width="24" height="50" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="465" y="1010" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+              </g>
+
+              <!-- LOT 3: XOF -->
+              <g class="booth-group" onclick="selectBooth(3)">
+                <rect id="boothSvg3" class="booth-rect" x="590" y="960" width="125" height="85" rx="5" fill="#451a03" fill-opacity="0.45" stroke="#d97706" stroke-width="2" />
+                <text x="652" y="988" fill="#fcd34d" font-size="10" font-weight="700" text-anchor="middle">PEMPAMER</text>
+                <text x="652" y="1016" fill="#ffffff" font-family="'Orbitron', sans-serif" font-size="24" font-weight="900" text-anchor="middle">3</text>
+                <text x="652" y="1034" fill="#cbd5e1" font-size="12" font-weight="700" text-anchor="middle">XOF</text>
+                <rect x="558" y="980" width="24" height="50" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="570" y="1010" fill="#38bdf8" font-size="10" font-weight="700" text-anchor="middle">K</text>
+                <rect x="622" y="934" width="60" height="20" fill="#0b1f4d" stroke="#38bdf8" stroke-width="1.2" rx="2" />
+                <text x="652" y="948" fill="#38bdf8" font-size="9" font-weight="700" text-anchor="middle">P</text>
+              </g>
 
             </svg>
           </div>
@@ -476,15 +539,15 @@
             </div>
             <div class="flex items-center gap-2">
               <span class="w-3.5 h-3.5 rounded bg-amber-900 border border-amber-500"></span>
-              <span>10 Lot Pempamer</span>
+              <span>11 Lot Pempamer</span>
             </div>
             <div class="flex items-center gap-2">
               <span class="w-3.5 h-3.5 rounded bg-emerald-600"></span>
-              <span>Pintu Masuk / Keluar</span>
+              <span>Pintu Masuk & Keluar</span>
             </div>
             <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded bg-slate-500"></span>
-              <span>SIP (Interactive Panel)</span>
+              <span class="w-3.5 h-3.5 rounded bg-blue-950 border border-sky-400"></span>
+              <span>Meja P (Panjang) & K (Kecil)</span>
             </div>
           </div>
         </div>
@@ -516,7 +579,7 @@
               </div>
               <div class="flex justify-between">
                 <span class="text-slate-400">Lokasi Fizikal:</span>
-                <span id="detailLocation" class="text-amber-400 font-medium">Lot Pempamer 1 (Sebelah Stor & SIP Kanan)</span>
+                <span id="detailLocation" class="text-amber-400 font-medium">Lot Pempamer 1 (Sebelah Stor & Meja P/K)</span>
               </div>
             </div>
             <!-- Butang Biodata Penceramah (tersembunyi untuk Lot 9 & 10) -->
@@ -542,7 +605,7 @@
         Rakan Strategik Industri & Agensi
       </span>
       <h2 class="font-display text-2xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-        10 Lot Reruai Pameran Teknologi
+        11 Lot Reruai Pameran Teknologi
       </h2>
       <div class="w-16 h-1 bg-cyan-400 mx-auto mt-3 rounded-full"></div>
       <p class="text-slate-400 mt-4 text-sm sm:text-base">
@@ -558,7 +621,10 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 01</span>
-            <i data-lucide="shield-check" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-1 rounded bg-[#021330] border border-cyan-400/40 flex items-center justify-center gap-1">
+              <i data-lucide="fingerprint" class="w-3.5 h-3.5 text-cyan-400"></i>
+              <span class="font-sans font-extrabold text-[11px] text-white tracking-tight">MyDigital<span class="text-cyan-400">ID</span></span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">MyDigitalID</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -567,8 +633,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 1 • 9.00 Pagi</span>
-          <button onclick="openSpeakerModal(1)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -578,7 +644,13 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 02</span>
-            <i data-lucide="layout-grid" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-1 rounded bg-[#030816] border border-slate-800 flex items-center justify-center gap-1.5">
+              <div class="grid grid-cols-2 gap-0.5">
+                <span class="w-1.5 h-1.5 bg-[#f25022]"></span><span class="w-1.5 h-1.5 bg-[#7fba00]"></span>
+                <span class="w-1.5 h-1.5 bg-[#00a4ef]"></span><span class="w-1.5 h-1.5 bg-[#ffb900]"></span>
+              </div>
+              <span class="font-sans font-bold text-[11px] text-white">Microsoft</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Microsoft</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -587,8 +659,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 2 • 11.10 Pagi</span>
-          <button onclick="openSpeakerModal(2)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -598,7 +670,9 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 03</span>
-            <i data-lucide="cloud" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-0.5 rounded bg-[#131921] border border-amber-500/30 flex items-center justify-center">
+              <span class="font-display font-extrabold text-xs text-[#ff9900] tracking-tighter">aws</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">AWS (Amazon Web Services)</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -607,8 +681,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 3 • 11.40 Pagi</span>
-          <button onclick="openSpeakerModal(3)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -618,7 +692,9 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 04</span>
-            <i data-lucide="monitor" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 w-7 rounded-full bg-[#0096d6] flex items-center justify-center shadow">
+              <span class="font-sans font-bold text-xs text-white italic tracking-tighter">hp</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">HP Malaysia</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -627,8 +703,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 4 • 12.10 Tgh Hari</span>
-          <button onclick="openSpeakerModal(4)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -638,7 +714,9 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 05</span>
-            <i data-lucide="camera" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2.5 py-1 rounded bg-white flex items-center justify-center">
+              <span class="font-serif font-black text-xs text-[#cc0000] tracking-wider uppercase">Canon</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Canon Malaysia</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -647,8 +725,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 5 • 2.30 Petang</span>
-          <button onclick="openSpeakerModal(5)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -658,7 +736,9 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 06</span>
-            <i data-lucide="network" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 flex items-center justify-center">
+              <span class="font-display font-black text-xs text-sky-400 tracking-wider">ACE<span class="text-amber-400 font-sans">TEAM</span></span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Ace Team</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -667,8 +747,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 6 • 3.00 Petang</span>
-          <button onclick="openSpeakerModal(6)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -678,7 +758,10 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 07</span>
-            <i data-lucide="terminal" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2.5 py-1 rounded bg-[#1c0f05] border border-orange-500/40 flex items-center justify-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+              <span class="font-extrabold text-xs text-orange-400 tracking-wide font-sans">Oren<span class="text-white">G</span></span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">OrenG</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -687,7 +770,7 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 7 • 3.30 Petang</span>
-          <button onclick="openSpeakerModal(7)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+          <button onclick="openSpeakerModal(2)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
             <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
           </button>
         </div>
@@ -698,7 +781,10 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 08</span>
-            <i data-lucide="bot" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-1 rounded bg-emerald-950/80 border border-emerald-500/40 flex items-center justify-center gap-1">
+              <i data-lucide="bot" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <span class="font-mono text-[10px] font-bold text-emerald-300">STEM</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">NGO — Robotik</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
@@ -707,8 +793,8 @@
         </div>
         <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
           <span class="text-[11px] text-cyan-400 font-semibold block">Slot 8 • 4.00 Petang</span>
-          <button onclick="openSpeakerModal(8)" class="w-full py-1.5 px-3 rounded-lg bg-cyan-950/80 hover:bg-cyan-500 hover:text-white border border-cyan-500/40 text-cyan-300 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
-            <i data-lucide="user-check" class="w-3.5 h-3.5"></i><span>Biodata Penceramah</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-900/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Penceramah: Akan Dikemaskini</span>
           </button>
         </div>
       </div>
@@ -718,14 +804,22 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 09</span>
-            <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-1 rounded bg-[#0b1f4d] border border-cyan-400/40 flex items-center justify-center gap-1">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-300"></i>
+              <span class="font-display font-black text-[11px] text-cyan-300">MOTAC</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Rakan Inovasi Digital MOTAC</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
             Pameran projek inovasi ICT terpilih dari bahagian, jabatan dan agensi di bawah naungan kementerian.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Pameran Seharian</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Pameran Seharian</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-800/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Maklumat Akan Dikemaskini</span>
+          </button>
+        </div>
       </div>
 
       <!-- Booth 10 -->
@@ -733,14 +827,21 @@
         <div>
           <div class="flex justify-between items-center mb-3">
             <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 10</span>
-            <i data-lucide="life-buoy" class="w-4 h-4 text-cyan-400"></i>
+            <div class="h-7 px-2 py-1 rounded bg-[#0b1f4d] border border-cyan-400/40 flex items-center justify-center">
+              <span class="font-display font-black text-xs text-cyan-300">BPM</span>
+            </div>
           </div>
           <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">Kaunter Servis BPM MOTAC</h3>
           <p class="text-xs text-slate-400 mt-2 leading-relaxed">
             Klinik ICT, khidmat bantuan teknikal, pendaftaran emel MyGovUC serta rundingan sistem kementerian.
           </p>
         </div>
-        <span class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-cyan-400 font-semibold block">Kaunter Terus BPM</span>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Kaunter Terus BPM</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-800/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Maklumat Akan Dikemaskini</span>
+          </button>
+        </div>
       </div>
 
     </div>
@@ -898,18 +999,50 @@
     <div class="bg-[#07132c] border border-cyan-500/30 rounded-2xl p-6 sm:p-10 shadow-2xl relative">
       <form id="regForm" onsubmit="handleRegistration(event)" class="space-y-5">
 
-        <!-- Nama Penuh -->
-        <div>
-          <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Nama Penuh *</label>
-          <div class="relative">
-            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
-              <i data-lucide="user" class="w-4 h-4"></i>
-            </span>
-            <input type="text" id="regName" placeholder="Contoh: MUHAMMAD DANIAL BIN ARIFFIN"
-              style="text-transform:uppercase"
-              class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
+        <!-- Gelaran & Nama Penuh -->
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+          <div class="sm:col-span-4">
+            <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Gelaran *</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                <i data-lucide="award" class="w-4 h-4"></i>
+              </span>
+              <select id="regTitle"
+                class="w-full pl-10 pr-8 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition appearance-none cursor-pointer">
+                <option value="">Pilih Gelaran</option>
+                <option value="Encik">Encik</option>
+                <option value="Puan">Puan</option>
+                <option value="Cik">Cik</option>
+                <option value="Tuan">Tuan</option>
+                <option value="Ts.">Ts.</option>
+                <option value="Ts. Dr.">Ts. Dr.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Prof.">Prof.</option>
+                <option value="Prof. Madya Dr.">Prof. Madya Dr.</option>
+                <option value="Ir.">Ir.</option>
+                <option value="YBhg. Dato'">YBhg. Dato'</option>
+                <option value="YBhg. Datin">YBhg. Datin</option>
+                <option value="YBhg. Datuk">YBhg. Datuk</option>
+                <option value="YBhg. Datuk Seri">YBhg. Datuk Seri</option>
+              </select>
+              <span class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-slate-500">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </span>
+            </div>
+            <p id="errRegTitle" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila pilih gelaran.</p>
           </div>
-          <p id="errRegName" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan nama penuh.</p>
+          <div class="sm:col-span-8">
+            <label class="block text-xs uppercase font-bold text-slate-300 tracking-wider mb-2">Nama Penuh *</label>
+            <div class="relative">
+              <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                <i data-lucide="user" class="w-4 h-4"></i>
+              </span>
+              <input type="text" id="regName" placeholder="Contoh: MUHAMMAD DANIAL BIN ARIFFIN"
+                style="text-transform:uppercase"
+                class="w-full pl-10 pr-4 py-3 rounded-xl bg-[#030816] border border-slate-700 text-white text-sm focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
+            </div>
+            <p id="errRegName" class="hidden text-red-400 text-xs mt-1.5 flex items-center gap-1"><i data-lucide="alert-circle" class="w-3 h-3"></i> Sila masukkan nama penuh.</p>
+          </div>
         </div>
 
         <!-- Jawatan (text, baris sendiri) -->
@@ -1253,10 +1386,44 @@
 
   <footer class="border-t border-slate-800 bg-[#020612] py-12 text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800/80">
-        <div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-8 border-b border-slate-800/80 items-start">
+        <div class="lg:col-span-4 space-y-2">
           <h4 class="font-display text-sm font-bold text-white uppercase tracking-wider">Hari Pendigitalan MOTAC Tahun 2026</h4>
-          <p class="text-slate-400 mt-1">Anjuran: Bahagian Pengurusan Maklumat (BPM), Kementerian Pelancongan, Seni dan Budaya</p>
+          <p class="text-slate-400 leading-relaxed">Anjuran: Bahagian Pengurusan Maklumat (BPM), Kementerian Pelancongan, Seni dan Budaya (MOTAC)</p>
+          <div class="pt-2 flex items-center gap-2 text-cyan-400 font-mono text-[11px]">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+            <span>Dewan Sanggar Pujangga, MOTAC Putrajaya</span>
+          </div>
+        </div>
+        <div class="lg:col-span-8 bg-[#07132c]/60 p-5 rounded-2xl border border-slate-800/80 space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold text-xs uppercase tracking-wider pb-2 border-b border-slate-800">
+            <i data-lucide="phone-call" class="w-4 h-4 text-cyan-400"></i>
+            <span>Hubungi Urus Setia Program</span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">Sebarang pertanyaan dan maklumat lanjut, sila hubungi pihak urus setia melalui pegawai berikut:</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+            <div class="bg-[#030816] p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <p class="font-bold text-white text-[12px]">Cik Nurul Ashikin Binti Samat</p>
+              <div class="mt-2 space-y-1 text-[11px]">
+                <a href="tel:0388917556" class="flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300"><i data-lucide="phone" class="w-3.5 h-3.5 text-slate-500"></i><span>03-8891 7556</span></a>
+                <a href="mailto:nurul.ashikin@motac.gov.my" class="flex items-center gap-1.5 text-slate-400 hover:text-cyan-400 truncate"><i data-lucide="mail" class="w-3.5 h-3.5 text-slate-500 shrink-0"></i><span class="truncate">nurul.ashikin@motac.gov.my</span></a>
+              </div>
+            </div>
+            <div class="bg-[#030816] p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <p class="font-bold text-white text-[12px]">Cik Durriyah Binti Salleh</p>
+              <div class="mt-2 space-y-1 text-[11px]">
+                <a href="tel:0388917666" class="flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300"><i data-lucide="phone" class="w-3.5 h-3.5 text-slate-500"></i><span>03-8891 7666</span></a>
+                <a href="mailto:durriyah@motac.gov.my" class="flex items-center gap-1.5 text-slate-400 hover:text-cyan-400 truncate"><i data-lucide="mail" class="w-3.5 h-3.5 text-slate-500 shrink-0"></i><span class="truncate">durriyah@motac.gov.my</span></a>
+              </div>
+            </div>
+            <div class="bg-[#030816] p-3 rounded-xl border border-slate-800 hover:border-cyan-500/40 transition">
+              <p class="font-bold text-white text-[12px]">Cik Aisya Syahirah Binti Badri</p>
+              <div class="mt-2 space-y-1 text-[11px]">
+                <a href="tel:0388917676" class="flex items-center gap-1.5 text-cyan-400 hover:text-cyan-300"><i data-lucide="phone" class="w-3.5 h-3.5 text-slate-500"></i><span>03-8891 7676</span></a>
+                <a href="mailto:aisya.badri@motac.gov.my" class="flex items-center gap-1.5 text-slate-400 hover:text-cyan-400 truncate"><i data-lucide="mail" class="w-3.5 h-3.5 text-slate-500 shrink-0"></i><span class="truncate">aisya.badri@motac.gov.my</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
@@ -1321,160 +1488,113 @@
     refreshCountdown();
     setInterval(refreshCountdown, 1000);
 
-    // 10 Booths Data Dictionary
+    // 11 Booths Data Dictionary
     const boothDatabase = {
       1: {
-        title: "MyDigitalID",
-        subtitle: "Slot 1 • Sesi Pagi 1 (9.00 - 10.00 Pagi)",
-        desc: "Inisiatif Identiti Digital Nasional untuk transaksi dalam talian yang selamat dan telus. Peserta boleh mendapatkan khidmat pendaftaran segera dan panduan pengesahan digital rasmi.",
-        activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 1 (Sebelah Stor & SIP Kanan)",
-        icon: "shield-check",
-        speaker: {
-          name: "Ts. Dr. Shamsul Anuar bin Rahim",
-          role: "Ketua Arkitek Solusi Identiti Digital, MyDigital ID Sdn Bhd",
-          topic: "Identiti Digital Nasional: Transformasi Akses Selamat Perkhidmatan Awam",
-          photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-          bio: "Mempunyai lebih 15 tahun pengalaman dalam bidang kriptografi, keselamatan siber awam, dan pelaksanaan teknologi keselamatan PKI di peringkat kebangsaan.",
-          expertise: "PKI, Kriptografi & Keselamatan Siber",
-          format: "Syarahan Perdana, Demo & Kuiz"
-        }
-      },
-      2: {
-        title: "Microsoft Malaysia",
-        subtitle: "Slot 2 • Sesi Pagi 2 (11.10 - 11.40 Pagi)",
-        desc: "Pameran solusi AI Copilot untuk pengurusan dokumen kementerian, automasi proses kerja, dan perkhidmatan kolaborasi awan moden.",
-        activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 2 (Hadapan Bilik Menunggu VIP)",
-        icon: "layout-grid",
-        speaker: {
-          name: "Farah Nadia binti Kamaruddin",
-          role: "Pakar Solusi Awan & AI Sektor Awam, Microsoft Malaysia",
-          topic: "Memperkasa Produktiviti Sektor Awam Melalui Microsoft Copilot & Generative AI",
-          photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-          bio: "Peneraju inisiatif transformasi digital sektor kerajaan bersama Microsoft, pakar dalam integrasi AI generatif bagi pengurusan dokumen dan automasi alur kerja.",
-          expertise: "Generative AI, Microsoft 365 Copilot",
-          format: "Pembentangan Interaktif & Sesi Soal Jawab"
-        }
-      },
-      3: {
-        title: "Amazon Web Services (AWS)",
-        subtitle: "Slot 3 • Sesi Pagi 2 (11.40 Pagi - 12.10 Tgh Hari)",
-        desc: "Solusi awan berdaya tahan tinggi, keselamatan data kerajaan, dan pemodenan sistem pelancongan pintar berasaskan infrastruktur cloud berskala besar.",
-        activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 3 (Bahagian Belakang Kanan)",
-        icon: "cloud",
-        speaker: {
-          name: "Irfan Hakim bin Zakaria",
-          role: "Arkitek Penyelesaian Kanan (Senior Solutions Architect), AWS Malaysia",
-          topic: "Infrastruktur Awan Berdaya Tahan & Analitik Data Pelancongan Generasi Baharu",
-          photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-          bio: "Berpengalaman membimbing pelbagai kementerian di Asia Tenggara dalam merangka seni bina awan selamat, pematuhan kawal selia data dan migrasi sistem legasi.",
-          expertise: "Cloud Architecture & Data Analytics",
-          format: "Kajian Kes & Kuiz Berhadiah"
-        }
-      },
-      4: {
-        title: "HP Malaysia",
-        subtitle: "Slot 4 • Sesi Pagi 2 (12.10 - 12.40 Tgh Hari)",
-        desc: "Pendedahan gajet dan komputer riba berkuasa AI terkini dengan perlindungan keselamatan perkakasan endpoint HP Wolf Security.",
-        activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 4 (Bahagian Belakang Kiri)",
-        icon: "monitor",
-        speaker: {
-          name: "Marcus Tan Wei Lun",
-          role: "Pengurus Pembangunan Produk Komersial & AI Endpoint, HP PPS Sales Sdn Bhd",
-          topic: "Keselamatan Perkakasan Hibrid & Komputer Riba Berkuasa AI Masa Depan",
-          photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-          bio: "Pakar strategi perkakasan korporat yang memfokuskan kepada perlindungan siber berasaskan silikon (HP Wolf Security) untuk tempat kerja moden dan mobiliti pegawai.",
-          expertise: "Endpoint Security & AI Hardware PC",
-          format: "Pendedahan Gajet & Kuiz"
-        }
-      },
-      5: {
-        title: "Canon Malaysia",
-        subtitle: "Slot 5 • Sesi Petang (2.30 - 3.00 Petang)",
-        desc: "Teknologi pendigitalan gambar, arkib digital resolusi tinggi untuk khazanah warisan budaya, serta peranti imbasan dokumen pintar.",
-        activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 5 (Sebelah Pintu Keluar Kiri Bawah)",
-        icon: "camera",
-        speaker: {
-          name: "Nurul Aini binti Hashim",
-          role: "Ketua Bahagian Solusi Pengimejan Dokumen & Warisan, Canon Marketing Malaysia",
-          topic: "Pemeliharaan Khazanah Warisan & Seni Budaya Melalui Pendigitalan Pengimejan Ultra-Tinggi",
-          photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
-          bio: "Terlibat dalam pelbagai projek pemuliharaan digital khazanah negara bersama arkib dan muzium menggunakan teknologi pengimbasan dokumen serta sensor visual resolusi tinggi.",
-          expertise: "Digital Archiving, Optical Scanning & Imaging",
-          format: "Demonstrasi Produk & Q&A"
-        }
-      },
-      6: {
         title: "Ace Team",
         subtitle: "Slot 6 • Sesi Petang (3.00 - 3.30 Petang)",
-        desc: "Integrasi perkakasan dan rangkaian selamat peringkat perusahaan, sokongan pemeliharaan data pelancongan dan transformasi digital.",
+        desc: "Integrasi sistem ICT komprehensif, penyelesaian rangkaian korporat dan infrastruktur pintar berprestasi tinggi untuk transformasi sektor pelancongan.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 6 (Kiri Dewan, Sebelah Pintu Keluar)",
+        loc: "Lot Pempamer 1 (Sebelah Stor & Meja P/K)",
         icon: "network",
-        speaker: {
-          name: "Mohd Razif bin Sulaiman",
-          role: "Pengarah Teknikal Rangkaian & Integrasi Sistem, Ace Team Networks",
-          topic: "Membina Ketahanan Infrastruktur Rangkaian Berkelajuan Tinggi Sektor Pelancongan",
-          photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80",
-          bio: "Jurutera sistem bertauliah dengan pengalaman luas dalam reka bentuk pusat data, SD-WAN dan integrasi keselamatan siber berskala besar untuk sektor awam.",
-          expertise: "Enterprise Networking & Zero Trust Access",
-          format: "Pembentangan Teknikal & Sesi Q&A"
-        }
+        speaker: null
       },
-      7: {
-        title: "OrenG",
+      2: {
+        title: "Oreng",
         subtitle: "Slot 7 • Sesi Petang (3.30 - 4.00 Petang)",
-        desc: "Pembangunan perisian dan platform pengalaman pelancongan maya interaktif serta integrasi analitik pengunjung industri pelancongan.",
+        desc: "Aplikasi inovatif dan perisian interaktif memperkasa pengurusan pengalaman digital pengunjung serta penyelesaian sistem pelancongan maya pintar.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 7 (Tengah Dewan, Sebelah Photo Wall)",
+        loc: "Lot Pempamer 2 (Hadapan Bilik Menunggu VIP)",
         icon: "terminal",
         speaker: {
-          name: "Siti Zulaikha binti Othman",
-          role: "Ketua Pegawai Teknologi (CTO), OrenG Interactive Solutions",
-          topic: "Aplikasi Pelancongan Pintar & Pengalaman Maya Interaktif untuk Pelancong Masa Kini",
-          photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80",
-          bio: "Pembangun aplikasi mudah alih dan perisian interaktif pemenang anugerah yang memfokuskan kepada pembangunan modul realiti terimbuh (AR) bagi sektor pelancongan tempatan.",
-          expertise: "App Development, UX/UI, AR Tourism",
+          name: "Ts. Mohammad Arzuan Ahamad Termidy",
+          role: "Perunding Teknikal, OrenG Academy Sdn Bhd",
+          topic: "Keselamatan Siber, Ethical Hacking & Perlindungan Ekosistem Awan",
+          photo: "",
+          bio: "Ts. Mohammad Arzuan, Perunding Teknikal di OrenG Academy Sdn Bhd. Berkelayakan CRA dan CSAP, beliau pakar dalam menangani ancaman siber, ethical hacking, pengurusan firewall, serta keselamatan sistem Windows dan awan (cloud).",
+          expertise: "Pensijilan CRA & CSAP, ethical hacking, firewall, keselamatan Windows & awan (cloud).",
           format: "Demonstrasi Aplikasi & Kuiz"
         }
       },
-      8: {
-        title: "NGO — Robotik",
-        subtitle: "Slot 8 • Sesi Petang (4.00 - 4.30 Petang)",
-        desc: "Pameran robotik dan automasi pintar, demonstrasi interaksi robot untuk sambutan tetamu serta pemerkasaan inovasi belia kebudayaan.",
+      3: {
+        title: "XOF",
+        subtitle: "Slot Petang • Sesi Pembentangan & Konsultasi",
+        desc: "Penyedia platform automasi proses pintar, keselamatan maklumat moden, dan seni bina sistem bersepadu agensi kerajaan masa depan.",
         activity: "Pembentangan, Q&A, Kuiz Interaktif",
-        loc: "Lot Pempamer 8 (Tengah Dewan, Baris Kedua)",
+        loc: "Lot Pempamer 3 (Bahagian Belakang Kanan Dewan)",
+        icon: "shield",
+        speaker: null
+      },
+      4: {
+        title: "Canon",
+        subtitle: "Slot 5 • Sesi Petang (2.30 - 3.00 Petang)",
+        desc: "Teknologi pendigitalan gambar, arkib digital resolusi ultra-tinggi untuk khazanah seni warisan budaya negara, serta peranti imbasan dokumen pintar.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 4 (Bahagian Belakang Kiri Dewan)",
+        icon: "camera",
+        speaker: null
+      },
+      5: {
+        title: "Amazon",
+        subtitle: "Slot 3 • Sesi Pagi 2 (11.40 Pagi - 12.10 Tgh Hari)",
+        desc: "Infrastruktur pengkomputeran awan AWS bertaraf dunia, pemodenan aplikasi sektor awam, analitik data raya dan perlindungan data pelancongan berkualiti tinggi.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 5 (Sebelah Pintu Tertutup Kiri Bawah)",
+        icon: "cloud",
+        speaker: null
+      },
+      6: {
+        title: "Hewlett-Packard (HP)",
+        subtitle: "Slot 4 • Sesi Pagi 2 (12.10 - 12.40 Tgh Hari)",
+        desc: "Perkakasan hibrid generasi baharu, komputer riba berkuasa AI (AI PC) serta ekosistem perlindungan perkakasan peringkat cip HP Wolf Security.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 6 (Sebelah Pintu Tertutup Kiri Atas)",
+        icon: "monitor",
+        speaker: null
+      },
+      7: {
+        title: "BPM (Bahagian Pengurusan Maklumat)",
+        subtitle: "Kaunter Servis & Khidmat Sokongan Sepanjang Hari",
+        desc: "Pusat rujukan dan khidmat bantuan teknikal BPM MOTAC: semakan akaun MyGovUC 2.0, sokongan DDMS 2.0, bantuan kata laluan, VPN dan keselamatan rangkaian kementerian.",
+        activity: "Klinik ICT & Kaunter Bantuan Langsung Warga MOTAC",
+        loc: "Lot Pempamer 7 (Tengah Dewan, Meja K/P)",
+        icon: "life-buoy",
+        speaker: null
+      },
+      8: {
+        title: "NGO (Robotik)",
+        subtitle: "Slot 8 • Sesi Petang (4.00 - 4.30 Petang)",
+        desc: "Pameran robotik dan automasi pintar, demonstrasi interaksi robot untuk sambutan tetamu kebudayaan serta pemerkasaan inovasi belia ke arah digitalisasi.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 8 (Tengah Dewan, Bawah Lot BPM)",
         icon: "bot",
-        speaker: {
-          name: "Prof. Madya Dr. Khairul Azman bin Jamil",
-          role: "Presiden Persatuan Pembangunan Robotik & Automasi Belia Kebangsaan",
-          topic: "Robotik Sosial & Automasi Pintar: Inovasi Khidmat Pelanggan Sektor Pelancongan & Budaya",
-          photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
-          bio: "Penyelidik aktif bidang robotik servis humanoid, telah membina lebih 20 prototaip robot interaksi sosial yang dipamerkan di persidangan antarabangsa.",
-          expertise: "Social Robotics, AI Vision & Mechatronics",
-          format: "Demonstrasi Langsung Robot & Kuiz"
-        }
+        speaker: null
       },
       9: {
-        title: "Rakan Inovasi Digital MOTAC",
-        subtitle: "Pameran Sepanjang Hari",
-        desc: "Reruai pameran khas inisiatif transformasi digital dari pelbagai bahagian MOTAC, Jabatan Kebudayaan & Kesenian Negara (JKKN), Tourism Malaysia dan ASWARA.",
-        activity: "Pameran Sistem & Khidmat Nasihat",
-        loc: "Lot Pempamer 9 (Tengah Kanan, Baris Pertama)",
-        icon: "sparkles",
+        title: "IGS Protech",
+        subtitle: "Slot Pagi • Sesi Konsultasi & Pameran",
+        desc: "Penyedia penyelesaian keselamatan siber dan perlindungan infrastruktur digital berkecekapan tinggi untuk melindungi aset maklumat kritikal agensi.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 9 (Tengah Dewan, Baris Kanan Atas)",
+        icon: "shield-alert",
         speaker: null
       },
       10: {
-        title: "Kaunter Servis BPM MOTAC",
-        subtitle: "Kaunter Rundingan & Sokongan Langsung",
-        desc: "Kaunter bantuan teknikal BPM: semakan akaun MyGovUC, bantuan DDMS 2.0, khidmat keselamatan kata laluan dan pendaftaran VPN.",
-        activity: "Klinik ICT & Kaunter Bantuan Langsung",
-        loc: "Lot Pempamer 10 (Tengah Kanan, Baris Kedua)",
-        icon: "life-buoy",
+        title: "Microsoft",
+        subtitle: "Slot 2 • Sesi Pagi 2 (11.10 - 11.40 Pagi)",
+        desc: "Ekosistem AI Copilot untuk pengurusan dokumen kementerian, automasi proses kerja, dan perkhidmatan kolaborasi awan pintar sektor awam moden.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 10 (Tengah Dewan, Baris Kanan Bawah)",
+        icon: "layout-grid",
+        speaker: null
+      },
+      11: {
+        title: "MyDigitalID",
+        subtitle: "Slot 1 • Sesi Pagi 1 (9.00 - 10.00 Pagi)",
+        desc: "Inisiatif Identiti Digital Nasional untuk transaksi dalam talian yang telus, pantas dan selamat tanpa kata laluan bagi perkhidmatan kerajaan kepada rakyat.",
+        activity: "Pembentangan, Q&A, Kuiz Interaktif",
+        loc: "Lot Pempamer 11 (Tengah Dewan, Baris Kiri Atas)",
+        icon: "fingerprint",
         speaker: null
       }
     };
@@ -1485,7 +1605,7 @@
       if (!data) return;
 
       // Update active SVG style
-      for (let i = 1; i <= 10; i++) {
+      for (let i = 1; i <= 11; i++) {
         const elem = document.getElementById(`boothSvg${i}`);
         if (elem) elem.classList.remove('booth-active');
       }
@@ -1503,11 +1623,17 @@
       // Kawalan paparan butang biodata pada panel pelan dewan
       const panelBtn = document.getElementById('panelSpeakerBtn');
       if (panelBtn) {
+        panelBtn.classList.remove('hidden');
         if (data.speaker) {
-          panelBtn.classList.remove('hidden');
+          panelBtn.removeAttribute('disabled');
           panelBtn.setAttribute('onclick', `openSpeakerModal(${id})`);
+          panelBtn.className = "w-full py-2.5 px-4 rounded-xl bg-cyan-950/70 border border-cyan-500/50 hover:bg-cyan-500 hover:text-white text-cyan-300 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition duration-200 shadow-md cursor-pointer";
+          panelBtn.innerHTML = '<i data-lucide="user-check" class="w-4 h-4"></i><span>Lihat Biodata Penceramah</span>';
         } else {
-          panelBtn.classList.add('hidden');
+          panelBtn.setAttribute('disabled', 'true');
+          panelBtn.removeAttribute('onclick');
+          panelBtn.className = "w-full py-2.5 px-4 rounded-xl bg-slate-900/60 border border-slate-700/60 text-slate-500 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition duration-200 shadow-md cursor-not-allowed";
+          panelBtn.innerHTML = '<i data-lucide="clock" class="w-4 h-4"></i><span>Penceramah: Akan Dikemaskini</span>';
         }
       }
 
@@ -1567,10 +1693,11 @@
     }
 
     // Hilangkan error bila user mula taip / pilih
-    ['regName','regPosition','regGred','regOrg','regDept','regEmail','regPhone'].forEach(id => {
+    ['regTitle','regName','regPosition','regGred','regOrg','regDept','regEmail','regPhone'].forEach(id => {
       const el = document.getElementById(id);
       if (!el) return;
       const errMap = {
+        regTitle:'errRegTitle',
         regName:'errRegName', regPosition:'errRegPosition',
         regGred:'errRegGred', regOrg:'errRegDept',
         regDept:'errRegUnit', regEmail:'errRegEmail', regPhone:'errRegPhone'
@@ -1589,6 +1716,7 @@
     async function handleRegistration(e) {
       e.preventDefault();
 
+      const gelaran = document.getElementById('regTitle').value;
       const nama    = document.getElementById('regName').value.trim();
       const jawatan = document.getElementById('regPosition').value.trim();
       const gred    = document.getElementById('regGred').value;
@@ -1602,6 +1730,7 @@
       const telefon = document.getElementById('regPhone').value.trim();
 
       // Validasi
+      setFieldError('regTitle',    'errRegTitle',    !gelaran);
       setFieldError('regName',     'errRegName',     !nama);
       setFieldError('regPosition', 'errRegPosition', !jawatan);
       setFieldError('regGred',     'errRegGred',     !gred);
@@ -1610,7 +1739,7 @@
       setFieldError('regEmail',    'errRegEmail',    !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel));
       setFieldError('regPhone',    'errRegPhone',    !telefon || !/^[\d\-\+\s]{9,15}$/.test(telefon));
 
-      if (!nama || !jawatan || !gred || !org || !dept || !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)
+      if (!gelaran || !nama || !jawatan || !gred || !org || !dept || !emel || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emel)
           || !telefon || !/^[\d\-\+\s]{9,15}$/.test(telefon)) return;
 
       const submitBtn = e.target.querySelector('button[type="submit"]');
@@ -1627,7 +1756,9 @@
       lucide.createIcons();
 
       const payload = {
-        nama, jawatan, gred,
+        gelaran,
+        nama: `${gelaran} ${nama}`.trim(),
+        jawatan, gred,
         jabatan: orgText,
         bahagian: deptText,
         emel, telefon,
@@ -1658,7 +1789,7 @@
       lucide.createIcons();
 
       // Tunjuk modal
-      document.getElementById('modalUserName').innerText = nama;
+      document.getElementById('modalUserName').innerText = `${gelaran} ${nama}`.trim();
       document.getElementById('regModal').classList.remove('hidden');
       document.getElementById('regModal').scrollTop = 0;
       document.getElementById('regForm').reset();
