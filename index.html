@@ -105,7 +105,7 @@
         <nav class="hidden lg:flex items-center space-x-7 text-xs tracking-wider uppercase font-semibold text-slate-300">
           <a href="#info" class="hover:text-cyan-400 transition-colors">Info Program</a>
           <a href="#pelan-dewan" class="text-cyan-400 flex items-center gap-1.5 hover:text-cyan-300"><i data-lucide="map" class="w-3.5 h-3.5"></i> Pelan Dewan Interaktif</a>
-          <a href="#pempamer" class="hover:text-cyan-400 transition-colors">10 Pempamer</a>
+          <a href="#pempamer" class="hover:text-cyan-400 transition-colors">11 Pempamer</a>
           <a href="#tentatif" class="hover:text-cyan-400 transition-colors">Tentatif</a>
           <a href="#daftar" class="hover:text-cyan-400 transition-colors">Pendaftaran</a>
         </nav>
@@ -131,7 +131,7 @@
       <a href="#pelan-dewan" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-cyan-400 font-bold hover:bg-slate-800/40 flex items-center gap-2">
         <i data-lucide="map" class="w-4 h-4"></i> Pelan Susun Atur Dewan (Interaktif)
       </a>
-      <a href="#pempamer" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400 hover:bg-slate-800/40">10 Pempamer</a>
+      <a href="#pempamer" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400 hover:bg-slate-800/40">11 Pempamer</a>
       <a href="#tentatif" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400 hover:bg-slate-800/40">Tentatif Program</a>
       <a href="#daftar" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-bold text-cyan-400 bg-cyan-950/60 border border-cyan-800/80 text-center">Daftar Kehadiran</a>
     </div>
@@ -844,6 +844,29 @@
         </div>
       </div>
 
+      <!-- Booth 11 -->
+      <div class="bg-[#07132c] border border-cyan-500/20 hover:border-cyan-400 p-5 rounded-2xl transition duration-200 hover:-translate-y-1 flex flex-col justify-between group">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-[11px] font-bold text-amber-300 font-display bg-amber-950/80 px-2 py-0.5 rounded border border-amber-600/30">LOT 11</span>
+            <div class="h-7 px-2 py-1 rounded bg-[#031525] border border-sky-400/40 flex items-center justify-center gap-1">
+              <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-sky-400"></i>
+              <span class="font-display font-bold text-xs text-sky-300">IGS</span>
+            </div>
+          </div>
+          <h3 class="font-bold text-base text-white group-hover:text-cyan-300 transition-colors">IGS Protech</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Penyelesaian perlindungan data peringkat perusahaan, pengurusan risiko siber dan keselamatan maklumat.
+          </p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800 space-y-2">
+          <span class="text-[11px] text-cyan-400 font-semibold block">Slot Pagi • Sesi Perkongsian</span>
+          <button disabled class="w-full py-1.5 px-3 rounded-lg bg-slate-800/60 border border-slate-700/60 text-slate-500 text-xs font-semibold flex items-center justify-center gap-1.5 cursor-not-allowed select-none">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i><span>Maklumat Akan Dikemaskini</span>
+          </button>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -992,9 +1015,37 @@
       <p class="text-slate-400 mt-2 text-sm">
         Sila lengkapkan maklumat di bawah bagi mengesahkan kehadiran fizikal anda.
       </p>
+      <!-- Lencana Fasa Pendaftaran -->
+      <div class="mt-4 flex justify-center">
+        <span id="regPhaseBadge" class="inline-flex items-center gap-1.5 text-[11px] font-bold text-cyan-300 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-700 uppercase tracking-wider">
+          <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i> Pendaftaran Dibuka
+        </span>
+      </div>
     </div>
 
-    <div class="bg-[#07132c] border border-cyan-500/30 rounded-2xl p-6 sm:p-10 shadow-2xl relative">
+    <!-- Notis: Belum Dibuka -->
+    <div id="regNotYet" class="hidden bg-[#07132c] border border-amber-500/40 rounded-2xl p-8 sm:p-10 shadow-2xl text-center">
+      <div class="w-14 h-14 bg-amber-950/80 border border-amber-500/50 rounded-full flex items-center justify-center mx-auto mb-4 text-amber-400">
+        <i data-lucide="clock" class="w-7 h-7"></i>
+      </div>
+      <h3 class="font-display text-lg sm:text-xl font-bold text-white mb-2">Pendaftaran Belum Dibuka</h3>
+      <p id="regNotYetMsg" class="text-sm text-slate-300 leading-relaxed max-w-md mx-auto">
+        Borang pendaftaran kehadiran masih belum dibuka. Sila kembali semula kemudian.
+      </p>
+    </div>
+
+    <!-- Notis: Ditutup -->
+    <div id="regClosed" class="hidden bg-[#07132c] border border-rose-500/40 rounded-2xl p-8 sm:p-10 shadow-2xl text-center">
+      <div class="w-14 h-14 bg-rose-950/80 border border-rose-500/50 rounded-full flex items-center justify-center mx-auto mb-4 text-rose-400">
+        <i data-lucide="lock" class="w-7 h-7"></i>
+      </div>
+      <h3 class="font-display text-lg sm:text-xl font-bold text-white mb-2">Pendaftaran Telah Ditutup</h3>
+      <p class="text-sm text-slate-300 leading-relaxed max-w-md mx-auto">
+        Tempoh pendaftaran kehadiran telah tamat. Terima kasih atas minat anda terhadap Hari Pendigitalan MOTAC Tahun 2026.
+      </p>
+    </div>
+
+    <div id="regFormWrapper" class="bg-[#07132c] border border-cyan-500/30 rounded-2xl p-6 sm:p-10 shadow-2xl relative">
       <form id="regForm" onsubmit="handleRegistration(event)" class="space-y-5">
 
         <!-- Gelaran & Nama Penuh -->
@@ -1805,6 +1856,93 @@
     window.addEventListener('DOMContentLoaded', () => {
       selectBooth(1);
     });
+
+    /* ============================================================
+       KAWALAN BUKA / TUTUP BORANG PENDAFTARAN IKUT TARIKH
+       ------------------------------------------------------------
+       Terdapat DUA tetingkap pendaftaran:
+         1) PRA-PENDAFTARAN (daftar awal)
+            - Buka : PRA_OPEN  -> Tutup : PRA_CLOSE
+         2) PENDAFTARAN WALK-IN (hari kejadian)
+            - Buka : WALKIN_OPEN -> Tutup : WALKIN_CLOSE
+       Antara PRA_CLOSE dan WALKIN_OPEN, borang akan disembunyikan
+       (notis "tutup sementara"). Selepas WALKIN_CLOSE, borang ditutup
+       terus. Format: 'YYYY-MM-DDTHH:mm:ss+08:00' (Waktu Malaysia).
+    ============================================================ */
+    const PRA_OPEN     = new Date('2026-01-01T00:00:00+08:00').getTime(); // mula pra-daftar
+    const PRA_CLOSE    = new Date('2026-10-21T23:59:59+08:00').getTime(); // tutup pra-daftar (16 Okt)
+    const WALKIN_OPEN  = new Date('2026-10-28T00:00:00+08:00').getTime(); // buka walk-in (28 Okt)
+    const WALKIN_CLOSE = new Date('2026-10-28T18:00:00+08:00').getTime(); // tutup walk-in (tamat acara)
+
+    /* SUIS INDUK (override manual):
+       'auto'   -> ikut tarikh di atas
+       'open'   -> paksa borang DIBUKA
+       'closed' -> paksa borang DITUTUP
+    */
+    const REG_FORCE = 'auto';
+
+    function updateRegistrationState() {
+      const now = new Date().getTime();
+
+      const wrapper  = document.getElementById('regFormWrapper');
+      const notYet   = document.getElementById('regNotYet');
+      const closed   = document.getElementById('regClosed');
+      const badge    = document.getElementById('regPhaseBadge');
+      const notYetMsg = document.getElementById('regNotYetMsg');
+
+      if (!wrapper || !notYet || !closed) return;
+
+      // Sembunyi semua dahulu
+      wrapper.classList.add('hidden');
+      notYet.classList.add('hidden');
+      closed.classList.add('hidden');
+
+      // Override manual
+      if (REG_FORCE === 'closed') {
+        closed.classList.remove('hidden');
+        if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
+        return;
+      }
+      if (REG_FORCE === 'open') {
+        if (badge) badge.textContent = 'Pendaftaran Dibuka';
+        wrapper.classList.remove('hidden');
+        if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
+        return;
+      }
+
+      // Akses walk-in RAHSIA untuk urus setia sahaja.
+      // Buka pautan dengan ?walkin=1 pada hari kejadian untuk daftar walk-in.
+      // Orang awam TIDAK akan nampak apa-apa tentang walk-in.
+      const isWalkinAccess = new URLSearchParams(window.location.search).get('walkin') === '1';
+
+      if (isWalkinAccess && now >= WALKIN_OPEN && now <= WALKIN_CLOSE) {
+        // Mod walk-in dalaman (hari kejadian)
+        if (badge) badge.textContent = 'Pendaftaran Walk-In (Urus Setia)';
+        wrapper.classList.remove('hidden');
+      } else if (now < PRA_OPEN) {
+        // Belum mula langsung
+        if (notYetMsg) notYetMsg.innerHTML =
+          'Borang pendaftaran kehadiran masih belum dibuka. Sila kembali semula kemudian.';
+        notYet.classList.remove('hidden');
+      } else if (now <= PRA_CLOSE) {
+        // Tetingkap PRA-PENDAFTARAN dibuka (untuk orang awam)
+        if (badge) badge.textContent = 'Pendaftaran Dibuka';
+        wrapper.classList.remove('hidden');
+      } else {
+        // Selepas pra-pendaftaran tutup -> papar "Ditutup" terus.
+        // (Tiada maklumat walk-in dipaparkan kepada orang awam.)
+        closed.classList.remove('hidden');
+      }
+
+      // Segarkan ikon Lucide selepas tukar paparan
+      if (window.lucide && typeof lucide.createIcons === 'function') {
+        lucide.createIcons();
+      }
+    }
+
+    updateRegistrationState();
+    // Semak setiap 30 saat supaya auto-tukar bila sampai masa (tanpa refresh)
+    setInterval(updateRegistrationState, 30000);
   </script>
 </body>
 </html>
