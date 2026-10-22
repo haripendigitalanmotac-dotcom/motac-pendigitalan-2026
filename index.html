@@ -1876,7 +1876,7 @@
        'open'   -> paksa borang DIBUKA
        'closed' -> paksa borang DITUTUP
     */
-    const REG_FORCE = 'auto';
+    const REG_FORCE = 'closed';
 
     function updateRegistrationState() {
       const now = new Date().getTime();
@@ -1896,6 +1896,7 @@
 
       // Override manual
       if (REG_FORCE === 'closed') {
+        if (badge) badge.textContent = 'Pendaftaran Ditutup';
         closed.classList.remove('hidden');
         if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
         return;
